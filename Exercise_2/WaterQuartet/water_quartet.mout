@@ -1,0 +1,268 @@
+
+
+ Parallel Execution: Process Information
+ ==============================================================================
+ Rank   Node Name                              NodeID   MyNodeRank  NodeMaster
+    0   Lenovo-PC                                 0          0          0
+    1   Lenovo-PC                                 0          1         -1
+ ==============================================================================
+
+
+May use up to 1914MB of RAM as shared memory on node 0
+
+ *******************************************************************************
+ *                                                                             *
+ *  -------------------------------------                                      *
+ *   Amsterdam Density Functional  (ADF)         2018                          *
+ *  -------------------------------------                                      *
+ *                                               r70630 2018-11-24             *
+ *                                                                             *
+ *                                                                             *
+ *                              =================                              *
+ *                              |               |                              *
+ *                              |     A M S     |                              *
+ *                              |               |                              *
+ *                              =================                              *
+ *                                                                             *
+ *                                                                             *
+ *   Online information and documentation:  https://www.scm.com/support/       *
+ *   E-mail:  support@scm.com   info@scm.com                                   *
+ *                                                                             *
+ *   Scientific publications using ADF results must be properly referenced     *
+ *   See the User Manuals (or the web site) for recommended citations          *
+ *   The terms and conditions of the End User License Agreement apply to       *
+ *   the use of ADF, https://www.scm.com/license-terms/                        *
+ *                                                                             *
+ *********************  x86_64_windows_intel / intelmpi  ***********************
+ 
+ Licensed to: Dr. Celia Fonseca Guerra / Advanced Computational Chemistry / Amsterdam / NL
+ SCM User ID: u17532
+  
+ AMS 2018  RunTime: Apr18-2019 16:08:10  Nodes: 1  Procs: 2
+
+ AMS jobname: ams
+ AMS jobid  : 707104685
+
+ Start   directory: C:/SCMTMP/user/
+ Results directory: C:/SCMTMP/user/ams.results/
+ Scratch directory: C:/SCMTMP/amstmp_ams_kid0.707104685/
+
+       ***************************
+       *  GEOMETRY OPTIMIZATION  *
+       ***************************
+
+Optimization Method                    Quasi Newton
+Optimization Coordinates               Delocalized Coordinates
+Optimize lattice                       F
+ 
+ ------------------------------------------------------
+ Convergence criteria (Hartree,Angstrom)
+ ------------------------------------------------------
+ Maximum gradient               0.001000000000
+ Maximum rms gradient           0.000666666667
+ Maximum step allowed           0.001000000000
+ Maximum rms step allowed       0.000666666667
+ Maximum energy change allowe   0.000010000000
+ 
+Initial model Hessian                  Automatic Hessian
+ 
+------------------------------------
+Quasi-Newton Optimizer Parameters
+------------------------------------
+Hessian Update Method                  BFGS
+Maximum number of steps                   72
+First GDIIS cycle                          0
+Maximum GDIIS vectors                      0
+Trust radius (bohr)                        0.200000
+Trust radius varies                        T
+Constraints converged at all steps         T
+Rigid motions option                     All
+Symmetrize steps                           F
+ 
+ 
+---------------
+Geometry
+---------------
+Atoms
+  Index Symbol       x (bohr)       y (bohr)       z (bohr)
+      1      H    -3.50876788     1.38928885     0.00000000
+      2      O    -4.63247462    -0.11980864     0.00000000
+      3      H    -6.34696644     0.63218898     0.00000000
+      4      H    -1.31443680    -3.32009762     0.00000000
+      5      O     0.12290779    -4.53383092     0.00000000
+      6      H    -0.73559479    -6.19756470     0.00000000
+      7      H     3.50876788    -1.38928885     0.00000000
+      8      O     4.63247462     0.11980864     0.00000000
+      9      H     6.34696644    -0.63218898     0.00000000
+     10      H     1.31443680     3.32009762     0.00000000
+     11      O    -0.12290779     4.53383092     0.00000000
+     12      H     0.73559479     6.19756470     0.00000000
+ 
+  Index Symbol   x (angstrom)   y (angstrom)   z (angstrom)
+      1      H    -1.85676000     0.73518000     0.00000000
+      2      O    -2.45140000    -0.06340000     0.00000000
+      3      H    -3.35867000     0.33454000     0.00000000
+      4      H    -0.69557000    -1.75692000     0.00000000
+      5      O     0.06504000    -2.39920000     0.00000000
+      6      H    -0.38926000    -3.27961000     0.00000000
+      7      H     1.85676000    -0.73518000     0.00000000
+      8      O     2.45140000     0.06340000     0.00000000
+      9      H     3.35867000    -0.33454000     0.00000000
+     10      H     0.69557000     1.75692000     0.00000000
+     11      O    -0.06504000     2.39920000     0.00000000
+     12      H     0.38926000     3.27961000     0.00000000
+ 
+Total System Charge             0.00000
+Bonding info available!
+ 
+ 
+------------------------
+UFF Engine configuration
+------------------------
+UFF Parameters file          general_db
+UFF Elements file            elements_db
+UFF MMAtomTypes file         mmatomtypes_db
+ 
+Number of symmetry operators: 4
+ Using automatic Hessian for delocalized coordinates.
+ MEMORY DEALLOCATION WARNING: MMStructureInfoModule NOT FOUND
+ MEMORY DEALLOCATION WARNING: MMStructureInfoModule NOT FOUND
+ MEMORY DEALLOCATION WARNING: MMStructureInfoModule NOT FOUND
+ MEMORY DEALLOCATION WARNING: MMStructureInfoModule NOT FOUND
+ 
+----------------------------------------------------------------------
+Geometry Convergence after Step   1       (Hartree/Angstrom,Angstrom)
+----------------------------------------------------------------------
+current energy                               -0.02598780 Hartree
+energy change                      -0.02598780     0.00001000    F
+constrained gradient max            0.00019809     0.00100000    T
+constrained gradient rms            0.00006807     0.00066667    T
+gradient max                        0.00019809
+gradient rms                        0.00006807
+cart. step max                      0.00037609     0.00100000    T
+cart. step rms                      0.00017382     0.00066667    T
+ 
+ 
+---------------
+Geometry
+---------------
+Atoms
+  Index Symbol       x (bohr)       y (bohr)       z (bohr)
+      1      H    -3.50805717     1.38912917     0.00000001
+      2      O    -4.63221102    -0.11974222     0.00000001
+      3      H    -6.34656482     0.63265558    -0.00000001
+      4      H    -1.31457053    -3.32064372     0.00000000
+      5      O     0.12306748    -4.53419948     0.00000001
+      6      H    -0.73518239    -6.19812237    -0.00000002
+      7      H     3.50805717    -1.38912917     0.00000001
+      8      O     4.63221102     0.11974222     0.00000001
+      9      H     6.34656482    -0.63265558    -0.00000001
+     10      H     1.31457053     3.32064372     0.00000000
+     11      O    -0.12306748     4.53419948     0.00000001
+     12      H     0.73518239     6.19812237    -0.00000003
+ 
+  Index Symbol   x (angstrom)   y (angstrom)   z (angstrom)
+      1      H    -1.85638391     0.73509550     0.00000001
+      2      O    -2.45126051    -0.06336485     0.00000001
+      3      H    -3.35845747     0.33478692     0.00000000
+      4      H    -0.69564077    -1.75720898     0.00000000
+      5      O     0.06512451    -2.39939504     0.00000001
+      6      H    -0.38904177    -3.27990511    -0.00000001
+      7      H     1.85638391    -0.73509550     0.00000001
+      8      O     2.45126051     0.06336485     0.00000001
+      9      H     3.35845747    -0.33478692     0.00000000
+     10      H     0.69564077     1.75720898     0.00000000
+     11      O    -0.06512451     2.39939504     0.00000001
+     12      H     0.38904177     3.27990511    -0.00000001
+ 
+Total System Charge             0.00000
+Bonding info available!
+ 
+
+ dE(predicted):    -0.68069E-07, dE(actual):    -0.12272E-06, Trust radius:    0.200000, all in a.u.
+ 
+---------------------------------------------------------
+Geometry Convergence after Step   2       ** CONVERGED **
+---------------------------------------------------------
+current energy                               -0.02598792 Hartree
+energy change                      -0.00000012     0.00001000    T
+constrained gradient max            0.00008978     0.00100000    T
+constrained gradient rms            0.00004356     0.00066667    T
+gradient max                        0.00008978
+gradient rms                        0.00004356
+cart. step max                      0.00324912     0.00100000    F
+cart. step rms                      0.00154031     0.00066667    F
+ 
+Geometry optimization converged
+Performing a single point calculation on the final geometry ...
+
+-----------------------
+Assumed Input Structure
+-----------------------
+Atoms
+    H         -3.5080571703    1.3891291695    0.0000000110  H_           0.416999995708
+    O         -4.6322110171   -0.1197422158    0.0000000133  O_3         -0.833999991417
+    H         -6.3465648188    0.6326555849   -0.0000000090  H_           0.416999995708
+    H         -1.3145705331   -3.3206437203   -0.0000000003  H_           0.416999995708
+    O          0.1230674837   -4.5341994835    0.0000000104  O_3         -0.833999991417
+    H         -0.7351823907   -6.1981223664   -0.0000000249  H_           0.416999995708
+    H          3.5080571703   -1.3891291695    0.0000000096  H_           0.416999995708
+    O          4.6322110171    0.1197422158    0.0000000105  O_3         -0.833999991417
+    H          6.3465648188   -0.6326555849   -0.0000000065  H_           0.416999995708
+    H          1.3145705331    3.3206437203    0.0000000013  H_           0.416999995708
+    O         -0.1230674837    4.5341994835    0.0000000104  O_3         -0.833999991417
+    H          0.7351823907    6.1981223664   -0.0000000257  H_           0.416999995708
+End
+
+Bonds
+    1      2    1.000000000000
+    2      3    1.000000000000
+    4      5    1.000000000000
+    5      6    1.000000000000
+    7      8    1.000000000000
+    8      9    1.000000000000
+   10     11    1.000000000000
+   11     12    1.000000000000
+End
+
+
+
+    =====================
+     CALCULATION RESULTS
+    =====================
+
+Energy (hartree)            -0.02598792
+
+Gradients (hartree/bohr)
+  Index   Atom            d/dx            d/dy            d/dz
+      1      H   -0.0000442393    0.0000056511   -0.0000000001
+      2      O    0.0000452256   -0.0000403974    0.0000000002
+      3      H   -0.0000097168   -0.0000158765    0.0000000000
+      4      H   -0.0000066727    0.0000283627   -0.0000000001
+      5      O   -0.0000475072   -0.0000184994    0.0000000002
+      6      H   -0.0000101764    0.0000012038   -0.0000000001
+      7      H    0.0000442393   -0.0000056511   -0.0000000001
+      8      O   -0.0000452256    0.0000403974    0.0000000001
+      9      H    0.0000097168    0.0000158765    0.0000000000
+     10      H    0.0000066727   -0.0000283627   -0.0000000001
+     11      O    0.0000475072    0.0000184994    0.0000000002
+     12      H    0.0000101764   -0.0000012038   -0.0000000001
+ 
+--------------------
+Energy Decomposition
+--------------------
+Total Energy (hartree)                -0.02598792
+Total Energy (eV)                     -0.70716733
+Bond bending (hartree)                 0.00029151
+Bond stretching (hartree)              0.00010423
+Bond torsion (hartree)                 0.00000000
+Bond inversion (hartree)               0.00000000
+Coulomb and Van Der Waals (ha         -0.02638367
+ 
+
+AMS application finished. Exiting.
+ NORMAL TERMINATION
+     Total cpu time:       0.11
+  Total system time:       0.17
+ Total elapsed time:       3.23
+NORMAL TERMINATION

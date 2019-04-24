@@ -1,0 +1,3 @@
+NORMAL TERMINATION
+ERROR DETECTED: wrong nr. of rigids
+application called MPI_Abort(MPI_COMM_WORLD, 666) - process 0

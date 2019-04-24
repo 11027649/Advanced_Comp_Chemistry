@@ -1,0 +1,2993 @@
+
+Create H   file=TZ2P-H
+XC
+  GGA blyp
+  DISPERSION Grimme3 BJDAMP
+End
+End Input
+
+ *******************************************************************************
+ *                                                                             *
+ *  -------------------------------------                                      *
+ *   Amsterdam Density Functional  (ADF)         development version           *
+ *  -------------------------------------                                      *
+ *                                               r61132 2017-09-08             *
+ *                                                                             *
+ *                                                                             *
+ *                              =================                              *
+ *                              |               |                              *
+ *                              |     A D F     |                              *
+ *                              |               |                              *
+ *                              =================                              *
+ *                                                                             *
+ *                                                                             *
+ *   Online information and documentation:  https://www.scm.com/support/       *
+ *   E-mail:  support@scm.com   info@scm.com                                   *
+ *                                                                             *
+ *   Scientific publications using ADF results must be properly referenced     *
+ *   See the User Manuals (or the web site) for recommended citations          *
+ *   The terms and conditions of the End User License Agreement apply to       *
+ *   the use of ADF, https://www.scm.com/license-terms/                        *
+ *                                                                             *
+ **********************  x86_64_linux_intel / intelmpi  ************************
+ 
+ Licensed to: VU/FEW (+ SARA) / ALGEMEEN / Amsterdam / THE NETHERLANDS
+ SCM User ID: u7668
+  
+ ADF development version  RunTime: Apr18-2019 21:31:26  Nodes: 1  Procs: 1
+
+ Temporary files are created in /local/datastore0/tcst25/186795/kid_0.Xb99Lv
+
+ Hydrogen (TZ2P)
+
+
+
+ ===========================
+ A T T A C H E D   F I L E S
+ ===========================
+  
+ CREATE - Data File:    TZ2P-H
+                        Hydrogen (TZ2P)
+
+
+
+ ===============================
+ M O D E L   P A R A M E T E R S
+ ===============================
+  
+ DENSITY FUNCTIONAL POTENTIAL (scf)
+    LDA:                               Exchange only                           == Not Default ==
+    Gradient Corrections:              Becke88 LYP                             == Not Default ==
+
+ SPIN  (restricted / unrestr.)
+    Molecule:                          Restricted                               
+
+ OTHER ASPECTS
+    Relativistic Corrections:          ---                                      
+
+    Nuclear Charge Density Model:      Point Charge Nuclei                      
+    Core Treatment:                    Frozen Orbital(s)                        
+
+    Hyperfine or Zeeman Interaction:   ---                                      
+
+ Settings for Grimme 3 dispersion correction
+
+      damping                        BJ
+      s6                          1.000
+      a1                          0.430
+      s8                          2.700
+      a2                          4.236
+
+ Other (technical) parameters
+
+      alpha                      14.000
+      version                         4
+ 
+
+
+
+ =====================================
+ S Y M M E T R Y ,   E L E C T R O N S
+ =====================================
+  
+ Symmetry: ATOM
+
+ Irreducible Representations, including subspecies
+ -------------------------------------------------
+ S
+ P:x  P:y  P:z
+ D:z2  D:x2-y2  D:xy  D:xz  D:yz
+ F:z3  F:z  F:xyz  F:z2x  F:z2y  F:x  F:y
+
+
+ Configuration of Valence Electrons
+ ==================================
+
+          Occupation Numbers
+          -------------------------------------------------
+ S        1
+ P        0
+ D        0
+ F        0
+          -------------------------------------------------
+
+ Total:   1
+
+ Net Charge: 0 (Nuclei minus Electrons)
+
+ Preset values for MO occupations will be applied through SCF cycle no. 1000000
+ Thereafter, the program will assign electrons to MOs that are spatially
+ similar to the occupied MOs in a "reference" cycle ("KeepOrbitals").
+ The reference cycle is always the PREVIOUS cycle: it will evolve with
+ the SCF procedure.
+
+
+
+ ================================
+ (Slater-type)  F U N C T I O N S  ***  (Basis and Fit)  ***
+ ================================
+  
+
+ Atom Type    1  (H)
+ ==============
+
+ Valence Basis Sets:   5
+ -----------------------
+   1 S    0.690000
+   1 S    0.920000
+   1 S    1.580000
+   2 P    1.250000
+   3 D    2.500000
+
+
+ BAS: List of all Elementary Cartesian Basis Functions
+ =====================================================
+
+ The numbering in the list below (to the right of the function characteristics) is referred
+ to in print-outs of MO eigenvectors and Mulliken populations in the BAS representation
+ (as contrasted to the SFO representation).
+
+ Notes:
+ 1. The functions are characterized by a polynomial prefactor (powers of x,y,z and r) and
+    an exponential decay factor alpha.
+ 2. Since the basis sets are specific for an atom TYPE, the individual functions occur on
+    all atoms of that type.
+ 3. The word 'Core' in the left margin signals that it is a Core Function (CF) : not a
+    degree of freedom in the valence set, but only used to ensure orthogonalization of
+    the other valence basis functions on the frozen Core Orbitals.
+
+
+ (power of) X  Y  Z  R     Alpha  on Atom
+            ==========     =====     ==========
+
+ H                                    1
+                                  ---------------------------------------------------------------------------
+            0  0  0  0     0.690      1
+            0  0  0  0     0.920      2
+            0  0  0  0     1.580      3
+            1  0  0  0     1.250      4
+            0  1  0  0     1.250      5
+            0  0  1  0     1.250      6
+            2  0  0  0     2.500      7
+            1  1  0  0     2.500      8
+            1  0  1  0     2.500      9
+            0  2  0  0     2.500     10
+            0  1  1  0     2.500     11
+            0  0  2  0     2.500     12
+
+ Total number of charge fitting functions (nprimf)        50
+ Total number of Cartesian basis functions (naos)         12
+ Total number of Cartesian core functions  (ncos)          0
+
+
+
+ BAS: List of all Elementary Cartesian Basis Functions
+ =====================================================
+
+ The numbering in the list below (to the right of the function characteristics) is referred
+ to in print-outs of MO eigenvectors and Mulliken populations in the BAS representation
+ (as contrasted to the SFO representation).
+
+ Notes:
+ 1. The functions are characterized by a polynomial prefactor (powers of x,y,z and r) and
+    an exponential decay factor alpha.
+ 2. Since the basis sets are specific for an atom TYPE, the individual functions occur on
+    all atoms of that type.
+ 3. The word 'Core' in the left margin signals that it is a Core Function (CF) : not a
+    degree of freedom in the valence set, but only used to ensure orthogonalization of
+    the other valence basis functions on the frozen Core Orbitals.
+
+
+ (power of) X  Y  Z  R     Alpha  on Atom
+            ==========     =====     ==========
+
+ H                                    1
+                                  ---------------------------------------------------------------------------
+            0  0  0  0     0.690      1
+            0  0  0  0     0.920      2
+            0  0  0  0     1.580      3
+            1  0  0  0     1.250      4
+            0  1  0  0     1.250      5
+            0  0  1  0     1.250      6
+            2  0  0  0     2.500      7
+            1  1  0  0     2.500      8
+            1  0  1  0     2.500      9
+            0  2  0  0     2.500     10
+            0  1  1  0     2.500     11
+            0  0  2  0     2.500     12
+1
+ ***************************************************************************************************
+
+
+
+                                              ***********************
+                                              *  T E C H N I C A L  *
+                                              ***********************
+  
+
+
+
+ =============================================================
+ P A R A L L E L I Z A T I O N  and  V E C T O R I Z A T I O N
+ =============================================================
+  
+ Nr of parallel processes:                                1
+ Maximum vector length in NumInt loops:                 128
+
+ IO buffersize (Mb):                                     64.000000
+
+
+
+ =====================
+ S C F   U P D A T E S
+ =====================
+  
+ Max. nr. of cycles:                               300
+ Convergence criterion:                              0.0000000100
+   secondary criterion:                              0.0000000100
+
+ Mix parameter (when DIIS does not apply):           0.2000000000
+ Special mix parameter for the first cycle:          1.0000000000
+ Mixed ADIIS+DIIS will be used
+    Max number of expansion vectors:                10
+    Pure ADIIS when Max([F,P]) is above              0.1000000000
+    Pure DIIS when Max([F,P]) is below               0.0010000000
+ Automatic ElectronSmearing (in case of problematic SCF convergence) disabled
+
+
+
+ =================
+ P R E C I S I O N  ***  (General: NumInt, NeglectFunctionTails, ...)  ***
+ =================
+  
+
+ NumInt:           Target precision:                12.0000000000
+ -------           Initial precision:               10.0000000000
+                   Min. precision (optimization):   10.0000000000
+
+ Neglect Functions:          Basis functions:        0.1000000000E-13
+ ------------------          Fit functions:          0.1000000000E-13
+
+
+
+ ===========================
+ L I N E A R   S C A L I N G
+ ===========================
+  
+
+ Cut-off radii density fit:                        0.1000000000E-97
+ Overlap cut-off criterion AO matrix elements:     0.1000000000E-97
+ Cut-offs for Coulomb potential and fitted density:0.1000000000E-97
+ Cut-off criterion for Coulomb multipole terms:    0.1000000000E-97
+ Progressive Convergence parameter:                 0.000000000    
+1
+ ***************************************************************************************************
+
+
+
+                                            ***************************
+                                            *  C O M P U T A T I O N  *
+                                            ***************************
+  
+
+ Number of elements of the density matrix on this node (used, total):        78        78
+
+
+
+ ===========================================
+ Numerical Integration : Fuzzy Cells (Becke)
+ ===========================================
+  
+ Becke grid quality: VERYGOOD       
+  
+ Lebedev angular grid order:             min:  13 max:  41
+ Nr. of radial points:                   min:  64 max:  64
+
+ Total nr. of points:         64
+ Nr. of blocks:                1
+ Block length:                64
+ Nr. of dummy points:          0
+
+
+ Test of Precision of the Numerical Integration Grid
+ ===================================================
+
+ Integral of the Total Core Density:                   0.00000000000000
+
+
+
+ ========================
+ Density Fitting (zlmFit)
+ ========================
+  
+ ZlmFit Fit Quality: VERYGOOD       
+  
+ Max L-expansion:                        min:   0 max:   0
+ Nr. of radial interpolation points:     min: 130 max: 130
+
+
+
+ =====
+ S C F  ***  ScaSCF  ***
+ =====
+  
+
+ CYCLE    1
+ SCF Error: norm([F,P])=      0.000000000000, max([F,P])=      0.000000000000
+ orbitals (Q,E):
+ ---------------
+ S :1...3            ( 1.00    -0.5000)  ( 0.00    -0.0900)  ( 0.00     1.2939)
+ P :1...1            ( 0.00     0.1562)
+ D :1...1            ( 0.00     2.2917)
+
+ CYCLE    2
+ SCF Error: norm([F,P])=      0.031002856008, max([F,P])=      0.026444239384
+ orbitals (Q,E):
+ ---------------
+ S :1...2            ( 1.00    -0.2236)  ( 0.00     0.0977)
+ P :1...1            ( 0.00     0.4190)
+ D :1...1            ( 0.00     2.5863)
+
+ CYCLE    3
+  SDIIS (wt  0.000):  0.2055  0.7945
+ A-DIIS (wt  1.000):  0.0000  1.0000
+  DIIS coefficients:  0.0000  1.0000
+ SCF Error: norm([F,P])=      0.009580013340, max([F,P])=      0.009328518993
+ orbitals (Q,E):
+ ---------------
+ S :1...2            ( 1.00    -0.2440)  ( 0.00     0.0860)
+ P :1...1            ( 0.00     0.4030)
+ D :1...1            ( 0.00     2.5655)
+
+ CYCLE    4
+  SDIIS (wt  0.987):  0.1949  0.8051
+ A-DIIS (wt  0.013):  0.0000  1.0000
+  DIIS coefficients:  0.1923  0.8077
+ SCF Error: norm([F,P])=      0.002320932075, max([F,P])=      0.002286403159
+ orbitals (Q,E):
+ ---------------
+ S :1...2            ( 1.00    -0.2400)  ( 0.00     0.0880)
+ P :1...1            ( 0.00     0.4062)
+ D :1...1            ( 0.00     2.5697)
+
+ CYCLE    5
+  SDIIS (wt  1.000):  0.0132  0.9868
+  DIIS coefficients:  0.0132  0.9868
+ SCF Error: norm([F,P])=      0.000031553206, max([F,P])=      0.000029840661
+ orbitals (Q,E):
+ ---------------
+ S :1...2            ( 1.00    -0.2400)  ( 0.00     0.0880)
+ P :1...1            ( 0.00     0.4062)
+ D :1...1            ( 0.00     2.5697)
+
+ CYCLE    6
+  SDIIS (wt  1.000): -0.0314  1.0314
+  DIIS coefficients: -0.0314  1.0314
+ SCF Error: norm([F,P])=      0.000000959925, max([F,P])=      0.000000913629
+ orbitals (Q,E):
+ ---------------
+ S :1...2            ( 1.00    -0.2400)  ( 0.00     0.0880)
+ P :1...1            ( 0.00     0.4062)
+ D :1...1            ( 0.00     2.5697)
+
+ CYCLE    7
+  SDIIS (wt  1.000):  0.0045  0.9955
+  DIIS coefficients:  0.0045  0.9955
+ SCF Error: norm([F,P])=      0.000000004387, max([F,P])=      0.000000004212
+ orbitals (Q,E):
+ ---------------
+ S :1...2            ( 1.00    -0.2400)  ( 0.00     0.0880)
+ P :1...1            ( 0.00     0.4062)
+ D :1...1            ( 0.00     2.5697)
+
+ SCF CONVERGED
+
+ CYCLE    8
+1
+ ***************************************************************************************************
+
+
+
+                                                *******************
+                                                *  R E S U L T S  *
+                                                *******************
+  
+ *** Setting up for NEW gradients in Focky
+ *** Using FIT density in Focky
+
+ Orbital Energies, per Irrep and Spin:
+ ======================================
+                        Occup              E (au)              E (eV)       Diff (eV) with prev. cycle
+                        -----      --------------------        ------       --------------------------
+ S
+               1        1.000     -0.24003723730291E+00        -6.532              -1.36E-09
+               2        0.000      0.87974178151410E-01         2.394
+               3        0.000      0.15021841144445E+01        40.877
+ P
+               1        0.000      0.40615190499536E+00        11.052
+ D
+               1        0.000      0.25696970808913E+01        69.925
+
+
+ Partially Occupied:
+               1 S                -0.24003723730291E+00
+  
+ LUMO :        2 S                 0.87974178151410E-01
+  
+
+
+ Orbital Energies, all Irreps
+ ========================================
+
+ Irrep        no.  (spin)   Occup              E (au)                E (eV)
+ ---------------------------------------------------------------------------
+ S             1             1.00       -0.24003723730291E+00        -6.5317
+ S             2             0.00        0.87974178151410E-01         2.3939
+ P             1             0.00        0.40615190499536E+00        11.0520
+ S             3             0.00        0.15021841144445E+01        40.8765
+ D             1             0.00        0.25696970808913E+01        69.9250
+
+
+ All Electron Calculation, thus no Orbital Energies of the Core Orbitals are calculated
+
+
+
+ =======================================
+ M U L L I K E N   P O P U L A T I O N S
+ =======================================
+  
+ The survey below gives for each atom:
+ a) the total charge (Z minus electrons)
+ b) the net spin polarization (nr of electrons spin-A minus spin-B)
+ c) for each spin the atomic electron valence density (integrated) per L-value.
+
+ Atom              Charge    Spin density          S         P         D         F
+ ----              ------    ------------       ------    ------    ------    ------
+ 1 H              -0.0000                       1.0000    0.0000    0.0000    0.0000
+
+ Populations of individual BAS functions
+ ----------------------------------------
+ 1 H            0.2458  0.6250  0.1292  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+                0.0000  0.0000
+
+ Gross Charges per Atom (Z minus electrons)
+ ==========================================
+            -0.0000
+ Net Total: -0.00000000
+
+
+
+ =======================================================================
+ Electrostatic potential at the Nuclei due to electrons and other nuclei
+ =======================================================================
+  
+         Atom                  Potential
+         ----                  ---------
+     1)   H                   0.94873442
+ 
+ 
+ ========================
+ No memory problems found
+ ========================
+ 
+ Maximum number of active allocate calls:         363
+ 
+ *******************************************************************************
+
+                             A D F   E X I T
+ NORMAL TERMINATION
+
+
+
+ =================
+ Timing Statistics
+ =================
+  
+ Total Used :                     CPU=        0.29      System=        0.03     Elapsed=        0.33
+
+ Calls  Section                     ( Mean, Percentage )
+ ---------------------------------------------------------------------------------------------------
+     3  ><      ................      0.00    0.34             0.00    0.00             0.00    0.24
+     1  INIT    ................      0.01    2.37             0.02   60.00             0.03    7.94
+     1  GEOMET  ................      0.00    1.36             0.00   13.33             0.01    2.60
+     1  INPUTA  ................      0.00    0.68             0.00    0.00             0.00    0.45
+     1  MAINSY  ................      0.00    1.02             0.00    6.67             0.01    1.74
+     1  SYMFIT  ................      0.00    0.00             0.00    3.33             0.00    0.25
+     1  CORORT  ................      0.00    0.00             0.00    0.00             0.00    0.08
+     1  SYMORB  ................      0.00    0.34             0.00    0.00             0.00    0.16
+     1  CLSMAT  ................      0.00    1.02             0.00    3.33             0.00    1.22
+     1  ORTHON  ................      0.00    0.34             0.00    0.00             0.00    0.39
+     1  GENPT   ................      0.01    3.39             0.00    0.00             0.01    3.03
+     1  PTBAS   ................      0.00    1.02             0.00    0.00             0.00    1.03
+     8  FOCKY   ................      0.03   70.17             0.00    3.33             0.03   64.02
+     8  FOCKTR  ................      0.00    2.03             0.00    0.00             0.00    1.66
+     8  SDIIS   ................      0.00    4.07             0.00    3.33             0.00    3.74
+     1  COREPS  ................      0.01    4.75             0.00    3.33             0.02    4.81
+     1  POPAN   ................      0.00    1.36             0.00    0.00             0.00    1.15
+     1  DEBYE   ................      0.00    0.00             0.00    0.00             0.00    0.15
+     1  EXIT PROCEDURE .........      0.02    5.76             0.00    3.33             0.02    5.33
+
+
+ Currently Open Files (EXIT00)
+ ====================
+
+ Unit    Access Format  Status   Type       Ident (file)
+ -------------------------------------------------------
+   3      SEQ    FORM   TRANSP  NORMAL      LOGFILE
+                                          ( logfile )
+
+
+ Buffered I/O statistics
+ =======================
+ Memory available:                     67108864
+ Number of records fitting in memory:     16131
+ Input :   0.2% of                        17484  *4k bytes
+ Output:  15.2% of                         1046  *4k bytes
+ Records from serial files evicted:           0
+                    others evicted:           0
+ Hash table lookups:      44693 with          0 conflicts (  0.00%)
+
+ ***************************************************************************************************
+ (LOGFILE)
+ <Apr18-2019> <21:31:26>  ADF development version  RunTime: Apr18-2019 21:31:26  Nodes: 1  Procs: 1
+ <Apr18-2019> <21:31:26>  Hydrogen (TZ2P)
+ <Apr18-2019> <21:31:26>  RunType   : CREATE
+ <Apr18-2019> <21:31:26>  Net Charge: 0 (Nuclei minus Electrons)
+ <Apr18-2019> <21:31:26>  Symmetry  : ATOM
+  Coordinates
+    Atom         X           Y           Z   (Angstrom)
+    1.H         0.000000    0.000000    0.000000
+ <Apr18-2019> <21:31:26>  >>>> CORORT
+ <Apr18-2019> <21:31:26>  >>>> CLSMAT
+ <Apr18-2019> <21:31:26>  >>>> ORTHON
+ <Apr18-2019> <21:31:26>  >>>> GENPT
+ <Apr18-2019> <21:31:26>  Block Length=  64
+ <Apr18-2019> <21:31:26>  >>>> PTBAS
+ <Apr18-2019> <21:31:26>  >>>> CYCLE
+ <Apr18-2019> <21:31:26>              |Error|         MaxErr       Wt(A-DIIS)
+ <Apr18-2019> <21:31:26>      1      0.00000000      0.00000000
+ <Apr18-2019> <21:31:26>      2      0.03100286      0.02644424
+ <Apr18-2019> <21:31:26>      3      0.00958001      0.00932852    100.0
+ <Apr18-2019> <21:31:26>      4      0.00232093      0.00228640      1.3
+ <Apr18-2019> <21:31:26>      5      0.00003155      0.00002984      0.0
+ <Apr18-2019> <21:31:26>      6      0.00000096      0.00000091      0.0
+ <Apr18-2019> <21:31:26>      7      0.00000000      0.00000000      0.0
+ <Apr18-2019> <21:31:26>  SCF converged
+ <Apr18-2019> <21:31:26>      8      0.00000000      0.00000000      0.0
+ <Apr18-2019> <21:31:26>  >>>> POPAN
+ <Apr18-2019> <21:31:26>  >>>> DEBYE
+ <Apr18-2019> <21:31:26>  NORMAL TERMINATION
+ <Apr18-2019> <21:31:26>  END
+
+Create F   file=TZ2P-F
+XC
+  GGA blyp
+  DISPERSION Grimme3 BJDAMP
+End
+End Input
+
+ *******************************************************************************
+ *                                                                             *
+ *  -------------------------------------                                      *
+ *   Amsterdam Density Functional  (ADF)         development version           *
+ *  -------------------------------------                                      *
+ *                                               r61132 2017-09-08             *
+ *                                                                             *
+ *                                                                             *
+ *                              =================                              *
+ *                              |               |                              *
+ *                              |     A D F     |                              *
+ *                              |               |                              *
+ *                              =================                              *
+ *                                                                             *
+ *                                                                             *
+ *   Online information and documentation:  https://www.scm.com/support/       *
+ *   E-mail:  support@scm.com   info@scm.com                                   *
+ *                                                                             *
+ *   Scientific publications using ADF results must be properly referenced     *
+ *   See the User Manuals (or the web site) for recommended citations          *
+ *   The terms and conditions of the End User License Agreement apply to       *
+ *   the use of ADF, https://www.scm.com/license-terms/                        *
+ *                                                                             *
+ **********************  x86_64_linux_intel / intelmpi  ************************
+ 
+ Licensed to: VU/FEW (+ SARA) / ALGEMEEN / Amsterdam / THE NETHERLANDS
+ SCM User ID: u7668
+  
+ ADF development version  RunTime: Apr18-2019 21:31:26  Nodes: 1  Procs: 1
+
+ Temporary files are created in /local/datastore0/tcst25/186795/kid_0.OpbILO
+
+ Fluorine (TZ2P)
+
+
+
+ ===========================
+ A T T A C H E D   F I L E S
+ ===========================
+  
+ CREATE - Data File:    TZ2P-F
+                        Fluorine (TZ2P)
+
+
+
+ ===============================
+ M O D E L   P A R A M E T E R S
+ ===============================
+  
+ DENSITY FUNCTIONAL POTENTIAL (scf)
+    LDA:                               Exchange only                           == Not Default ==
+    Gradient Corrections:              Becke88 LYP                             == Not Default ==
+
+ SPIN  (restricted / unrestr.)
+    Molecule:                          Restricted                               
+
+ OTHER ASPECTS
+    Relativistic Corrections:          ---                                      
+
+    Nuclear Charge Density Model:      Point Charge Nuclei                      
+    Core Treatment:                    Frozen Orbital(s)                        
+
+    Hyperfine or Zeeman Interaction:   ---                                      
+
+ Settings for Grimme 3 dispersion correction
+
+      damping                        BJ
+      s6                          1.000
+      a1                          0.430
+      s8                          2.700
+      a2                          4.236
+
+ Other (technical) parameters
+
+      alpha                      14.000
+      version                         4
+ 
+
+
+
+ =====================================
+ S Y M M E T R Y ,   E L E C T R O N S
+ =====================================
+  
+ Symmetry: ATOM
+
+ Irreducible Representations, including subspecies
+ -------------------------------------------------
+ S
+ P:x  P:y  P:z
+ D:z2  D:x2-y2  D:xy  D:xz  D:yz
+ F:z3  F:z  F:xyz  F:z2x  F:z2y  F:x  F:y
+
+
+ Configuration of Valence Electrons
+ ==================================
+
+          Occupation Numbers
+          -------------------------------------------------
+ S        2*2
+ P        5
+ D        0
+ F        0
+          -------------------------------------------------
+
+ Total:   9
+
+ Net Charge: 0 (Nuclei minus Electrons)
+
+ Preset values for MO occupations will be applied through SCF cycle no. 1000000
+ Thereafter, the program will assign electrons to MOs that are spatially
+ similar to the occupied MOs in a "reference" cycle ("KeepOrbitals").
+ The reference cycle is always the PREVIOUS cycle: it will evolve with
+ the SCF procedure.
+
+
+
+ ================================
+ (Slater-type)  F U N C T I O N S  ***  (Basis and Fit)  ***
+ ================================
+  
+
+ Atom Type    1  (F)
+ ==============
+
+ Valence Basis Sets:  10
+ -----------------------
+   1 S   10.880000
+   1 S    7.700000
+   2 S    3.240000
+   2 S    1.940000
+   2 S    0.740000
+   2 P    4.540000
+   2 P    2.300000
+   2 P    1.240000
+   3 D    2.000000
+   4 F    3.000000
+
+
+ BAS: List of all Elementary Cartesian Basis Functions
+ =====================================================
+
+ The numbering in the list below (to the right of the function characteristics) is referred
+ to in print-outs of MO eigenvectors and Mulliken populations in the BAS representation
+ (as contrasted to the SFO representation).
+
+ Notes:
+ 1. The functions are characterized by a polynomial prefactor (powers of x,y,z and r) and
+    an exponential decay factor alpha.
+ 2. Since the basis sets are specific for an atom TYPE, the individual functions occur on
+    all atoms of that type.
+ 3. The word 'Core' in the left margin signals that it is a Core Function (CF) : not a
+    degree of freedom in the valence set, but only used to ensure orthogonalization of
+    the other valence basis functions on the frozen Core Orbitals.
+
+
+ (power of) X  Y  Z  R     Alpha  on Atom
+            ==========     =====     ==========
+
+ F                                    1
+                                  ---------------------------------------------------------------------------
+            0  0  0  0    10.880      1
+            0  0  0  0     7.700      2
+            0  0  0  1     3.240      3
+            0  0  0  1     1.940      4
+            0  0  0  1     0.740      5
+            1  0  0  0     4.540      6
+            0  1  0  0     4.540      7
+            0  0  1  0     4.540      8
+            1  0  0  0     2.300      9
+            0  1  0  0     2.300     10
+            0  0  1  0     2.300     11
+            1  0  0  0     1.240     12
+            0  1  0  0     1.240     13
+            0  0  1  0     1.240     14
+            2  0  0  0     2.000     15
+            1  1  0  0     2.000     16
+            1  0  1  0     2.000     17
+            0  2  0  0     2.000     18
+            0  1  1  0     2.000     19
+            0  0  2  0     2.000     20
+            3  0  0  0     3.000     21
+            2  1  0  0     3.000     22
+            2  0  1  0     3.000     23
+            1  2  0  0     3.000     24
+            1  1  1  0     3.000     25
+            1  0  2  0     3.000     26
+            0  3  0  0     3.000     27
+            0  2  1  0     3.000     28
+            0  1  2  0     3.000     29
+            0  0  3  0     3.000     30
+
+ Total number of charge fitting functions (nprimf)        85
+ Total number of Cartesian basis functions (naos)         30
+ Total number of Cartesian core functions  (ncos)          0
+
+
+
+ BAS: List of all Elementary Cartesian Basis Functions
+ =====================================================
+
+ The numbering in the list below (to the right of the function characteristics) is referred
+ to in print-outs of MO eigenvectors and Mulliken populations in the BAS representation
+ (as contrasted to the SFO representation).
+
+ Notes:
+ 1. The functions are characterized by a polynomial prefactor (powers of x,y,z and r) and
+    an exponential decay factor alpha.
+ 2. Since the basis sets are specific for an atom TYPE, the individual functions occur on
+    all atoms of that type.
+ 3. The word 'Core' in the left margin signals that it is a Core Function (CF) : not a
+    degree of freedom in the valence set, but only used to ensure orthogonalization of
+    the other valence basis functions on the frozen Core Orbitals.
+
+
+ (power of) X  Y  Z  R     Alpha  on Atom
+            ==========     =====     ==========
+
+ F                                    1
+                                  ---------------------------------------------------------------------------
+            0  0  0  0    10.880      1
+            0  0  0  0     7.700      2
+            0  0  0  1     3.240      3
+            0  0  0  1     1.940      4
+            0  0  0  1     0.740      5
+            1  0  0  0     4.540      6
+            0  1  0  0     4.540      7
+            0  0  1  0     4.540      8
+            1  0  0  0     2.300      9
+            0  1  0  0     2.300     10
+            0  0  1  0     2.300     11
+            1  0  0  0     1.240     12
+            0  1  0  0     1.240     13
+            0  0  1  0     1.240     14
+            2  0  0  0     2.000     15
+            1  1  0  0     2.000     16
+            1  0  1  0     2.000     17
+            0  2  0  0     2.000     18
+            0  1  1  0     2.000     19
+            0  0  2  0     2.000     20
+            3  0  0  0     3.000     21
+            2  1  0  0     3.000     22
+            2  0  1  0     3.000     23
+            1  2  0  0     3.000     24
+            1  1  1  0     3.000     25
+            1  0  2  0     3.000     26
+            0  3  0  0     3.000     27
+            0  2  1  0     3.000     28
+            0  1  2  0     3.000     29
+            0  0  3  0     3.000     30
+1
+ ***************************************************************************************************
+
+
+
+                                              ***********************
+                                              *  T E C H N I C A L  *
+                                              ***********************
+  
+
+
+
+ =============================================================
+ P A R A L L E L I Z A T I O N  and  V E C T O R I Z A T I O N
+ =============================================================
+  
+ Nr of parallel processes:                                1
+ Maximum vector length in NumInt loops:                 128
+
+ IO buffersize (Mb):                                     64.000000
+
+
+
+ =====================
+ S C F   U P D A T E S
+ =====================
+  
+ Max. nr. of cycles:                               300
+ Convergence criterion:                              0.0000000100
+   secondary criterion:                              0.0000000100
+
+ Mix parameter (when DIIS does not apply):           0.2000000000
+ Special mix parameter for the first cycle:          1.0000000000
+ Mixed ADIIS+DIIS will be used
+    Max number of expansion vectors:                10
+    Pure ADIIS when Max([F,P]) is above              0.1000000000
+    Pure DIIS when Max([F,P]) is below               0.0010000000
+ Automatic ElectronSmearing (in case of problematic SCF convergence) disabled
+
+
+
+ =================
+ P R E C I S I O N  ***  (General: NumInt, NeglectFunctionTails, ...)  ***
+ =================
+  
+
+ NumInt:           Target precision:                12.0000000000
+ -------           Initial precision:               10.0000000000
+                   Min. precision (optimization):   10.0000000000
+
+ Neglect Functions:          Basis functions:        0.1000000000E-13
+ ------------------          Fit functions:          0.1000000000E-13
+
+
+
+ ===========================
+ L I N E A R   S C A L I N G
+ ===========================
+  
+
+ Cut-off radii density fit:                        0.1000000000E-97
+ Overlap cut-off criterion AO matrix elements:     0.1000000000E-97
+ Cut-offs for Coulomb potential and fitted density:0.1000000000E-97
+ Cut-off criterion for Coulomb multipole terms:    0.1000000000E-97
+ Progressive Convergence parameter:                 0.000000000    
+1
+ ***************************************************************************************************
+
+
+
+                                            ***************************
+                                            *  C O M P U T A T I O N  *
+                                            ***************************
+  
+
+ Number of elements of the density matrix on this node (used, total):       465       465
+
+
+
+ ===========================================
+ Numerical Integration : Fuzzy Cells (Becke)
+ ===========================================
+  
+ Becke grid quality: VERYGOOD       
+  
+ Lebedev angular grid order:             min:  13 max:  41
+ Nr. of radial points:                   min:  76 max:  76
+
+ Total nr. of points:         76
+ Nr. of blocks:                1
+ Block length:                76
+ Nr. of dummy points:          0
+
+
+ Test of Precision of the Numerical Integration Grid
+ ===================================================
+
+ Integral of the Total Core Density:                   0.00000000000000
+
+
+
+ ========================
+ Density Fitting (zlmFit)
+ ========================
+  
+ ZlmFit Fit Quality: VERYGOOD       
+  
+ Max L-expansion:                        min:   0 max:   0
+ Nr. of radial interpolation points:     min: 170 max: 170
+
+
+
+ =====
+ S C F  ***  ScaSCF  ***
+ =====
+  
+
+ CYCLE    1
+ SCF Error: norm([F,P])=      0.000000000000, max([F,P])=      0.000000000000
+ orbitals (Q,E):
+ ---------------
+ S :1...5            ( 2.00   -40.4878)  ( 2.00   -10.0106)  ( 0.00    -4.4145)  ( 0.00    -2.1243)
+                     ( 0.00    34.3132)
+ P :1...3            ( 5.00   -10.1248)  ( 0.00    -4.4262)  ( 0.00    -2.4124)
+ D :1...1            ( 0.00    -4.0000)
+ F :1...1            ( 0.00    -2.2500)
+
+ CYCLE    2
+  SDIIS (wt  0.000):  1.0000 -0.0000
+ A-DIIS (wt  1.000):  0.0000  1.0000
+  DIIS coefficients:  0.0000  1.0000
+ SCF Error: norm([F,P])=     11.373794780581, max([F,P])=      4.777759414031
+ orbitals (Q,E):
+ ---------------
+ S :1...3            ( 2.00   -18.8794)  ( 2.00    -0.0304)  ( 0.00     0.3093)
+ P :1...2            ( 5.00     0.3553)  ( 0.00     1.5643)
+ D :1...1            ( 0.00     1.6494)
+ F :1...1            ( 0.00     4.0453)
+
+ CYCLE    3
+  SDIIS (wt  0.000):  0.2302  0.7698
+ A-DIIS (wt  1.000):  0.4427  0.5573
+  DIIS coefficients:  0.4427  0.5573
+ SCF Error: norm([F,P])=      5.107371177545, max([F,P])=      3.125425661947
+ orbitals (Q,E):
+ ---------------
+ S :1...3            ( 2.00   -24.7932)  ( 2.00    -1.7827)  ( 0.00    -0.0636)
+ P :1...2            ( 5.00    -1.0793)  ( 0.00     0.2021)
+ D :1...1            ( 0.00     0.6865)
+ F :1...1            ( 0.00     2.8888)
+
+ CYCLE    4
+  SDIIS (wt  0.000): -0.0128  0.1085  0.9043
+ A-DIIS (wt  1.000):  0.0000  0.0000  1.0000
+  DIIS coefficients:  0.0000  0.0000  1.0000
+ SCF Error: norm([F,P])=      0.965884247460, max([F,P])=      0.451655557762
+ orbitals (Q,E):
+ ---------------
+ S :1...3            ( 2.00   -23.6749)  ( 2.00    -0.7847)  ( 0.00     0.0644)
+ P :1...2            ( 5.00    -0.1299)  ( 0.00     0.5762)
+ D :1...1            ( 0.00     1.2513)
+ F :1...1            ( 0.00     3.5825)
+
+ CYCLE    5
+  SDIIS (wt  0.000):  0.0122 -0.0391  0.5749  0.4520
+ A-DIIS (wt  1.000):  0.0000  0.0000  0.6712  0.3288
+  DIIS coefficients:  0.0000  0.0000  0.6712  0.3288
+ SCF Error: norm([F,P])=      1.674963411166, max([F,P])=      0.825318021724
+ orbitals (Q,E):
+ ---------------
+ S :1...3            ( 2.00   -24.3044)  ( 2.00    -1.0529)  ( 0.00     0.0313)
+ P :1...2            ( 5.00    -0.3714)  ( 0.00     0.4442)
+ D :1...1            ( 0.00     1.1317)
+ F :1...1            ( 0.00     3.4351)
+
+ CYCLE    6
+  SDIIS (wt  0.024):  0.0029  0.0040  0.0564 -0.0876  1.0243
+ A-DIIS (wt  0.976):  0.0000  0.0000  0.0000  0.0000  1.0000
+  DIIS coefficients:  0.0001  0.0001  0.0013 -0.0021  1.0006
+ SCF Error: norm([F,P])=      0.199607562059, max([F,P])=      0.097634841195
+ orbitals (Q,E):
+ ---------------
+ S :1...3            ( 2.00   -24.5137)  ( 2.00    -1.1478)  ( 0.00     0.0173)
+ P :1...2            ( 5.00    -0.4644)  ( 0.00     0.4071)
+ D :1...1            ( 0.00     1.0935)
+ F :1...1            ( 0.00     3.3875)
+
+ CYCLE    7
+  SDIIS (wt  0.000): -0.0005  0.0010  0.0222 -0.0066  0.6116  0.3724
+ A-DIIS (wt  1.000):  0.0000  0.0000  0.0000  0.0000  0.6122  0.3878
+  DIIS coefficients:  0.0000  0.0000  0.0000  0.0000  0.6122  0.3878
+ SCF Error: norm([F,P])=      0.266507541610, max([F,P])=      0.126514736478
+ orbitals (Q,E):
+ ---------------
+ S :1...3            ( 2.00   -24.3946)  ( 2.00    -1.0985)  ( 0.00     0.0225)
+ P :1...2            ( 5.00    -0.4159)  ( 0.00     0.4255)
+ D :1...1            ( 0.00     1.1136)
+ F :1...1            ( 0.00     3.4123)
+
+ CYCLE    8
+  SDIIS (wt  0.859):  0.0000 -0.0000 -0.0010  0.0023  0.0294 -0.0834  1.0527
+ A-DIIS (wt  0.141):  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  1.0000
+  DIIS coefficients:  0.0000 -0.0000 -0.0009  0.0020  0.0252 -0.0716  1.0453
+ SCF Error: norm([F,P])=      0.030968782312, max([F,P])=      0.014981503364
+ orbitals (Q,E):
+ ---------------
+ S :1...3            ( 2.00   -24.3770)  ( 2.00    -1.0904)  ( 0.00     0.0233)
+ P :1...2            ( 5.00    -0.4080)  ( 0.00     0.4287)
+ D :1...1            ( 0.00     1.1172)
+ F :1...1            ( 0.00     3.4167)
+
+ CYCLE    9
+  SDIIS (wt  0.981): -0.0000  0.0000 -0.0001 -0.0004  0.0017  0.0154  0.0457  0.9377
+ A-DIIS (wt  0.019):  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  1.0000
+  DIIS coefficients: -0.0000  0.0000 -0.0001 -0.0004  0.0017  0.0151  0.0448  0.9389
+ SCF Error: norm([F,P])=      0.006059807167, max([F,P])=      0.002904332574
+ orbitals (Q,E):
+ ---------------
+ S :1...3            ( 2.00   -24.3801)  ( 2.00    -1.0917)  ( 0.00     0.0232)
+ P :1...2            ( 5.00    -0.4093)  ( 0.00     0.4282)
+ D :1...1            ( 0.00     1.1167)
+ F :1...1            ( 0.00     3.4160)
+
+ CYCLE   10
+  SDIIS (wt  1.000): -0.0000  0.0000  0.0000 -0.0000 -0.0005 -0.0009  1.0014
+  DIIS coefficients: -0.0000  0.0000  0.0000 -0.0000 -0.0005 -0.0009  1.0014
+ SCF Error: norm([F,P])=      0.000165576581, max([F,P])=      0.000079185113
+ orbitals (Q,E):
+ ---------------
+ S :1...3            ( 2.00   -24.3800)  ( 2.00    -1.0917)  ( 0.00     0.0232)
+ P :1...2            ( 5.00    -0.4092)  ( 0.00     0.4282)
+ D :1...1            ( 0.00     1.1167)
+ F :1...1            ( 0.00     3.4160)
+
+ CYCLE   11
+  SDIIS (wt  1.000): -0.0000  0.0000 -0.0000 -0.0003 -0.0117  1.0121
+  DIIS coefficients: -0.0000  0.0000 -0.0000 -0.0003 -0.0117  1.0121
+ SCF Error: norm([F,P])=      0.000000045102, max([F,P])=      0.000000021900
+ orbitals (Q,E):
+ ---------------
+ S :1...3            ( 2.00   -24.3800)  ( 2.00    -1.0917)  ( 0.00     0.0232)
+ P :1...2            ( 5.00    -0.4092)  ( 0.00     0.4282)
+ D :1...1            ( 0.00     1.1167)
+ F :1...1            ( 0.00     3.4160)
+
+ CYCLE   12
+  SDIIS (wt  1.000): -0.0000  0.0075  0.9925
+  DIIS coefficients: -0.0000  0.0075  0.9925
+ SCF Error: norm([F,P])=      0.000000000761, max([F,P])=      0.000000000372
+ orbitals (Q,E):
+ ---------------
+ S :1...3            ( 2.00   -24.3800)  ( 2.00    -1.0917)  ( 0.00     0.0232)
+ P :1...2            ( 5.00    -0.4092)  ( 0.00     0.4282)
+ D :1...1            ( 0.00     1.1167)
+ F :1...1            ( 0.00     3.4160)
+
+ SCF CONVERGED
+
+ CYCLE   13
+1
+ ***************************************************************************************************
+
+
+
+                                                *******************
+                                                *  R E S U L T S  *
+                                                *******************
+  
+ *** Setting up for NEW gradients in Focky
+ *** Using FIT density in Focky
+
+ Orbital Energies, per Irrep and Spin:
+ ======================================
+                        Occup              E (au)              E (eV)       Diff (eV) with prev. cycle
+                        -----      --------------------        ------       --------------------------
+ S
+               1        2.000     -0.24380013662793E+02      -663.414              -5.70E-10
+               2        2.000     -0.10916696572490E+01       -29.706              -4.11E-10
+               3        0.000      0.23171521938657E-01         0.631
+               4        0.000      0.15801599788495E+01        42.998
+               5        0.000      0.48367571090263E+02      1316.149
+ P
+               1        5.000     -0.40924594303694E+00       -11.136              -3.94E-10
+               2        0.000      0.42818717158446E+00        11.652
+               3        0.000      0.45634501130520E+01       124.178
+ D
+               1        0.000      0.11166683619357E+01        30.386
+ F
+               1        0.000      0.34160293329535E+01        92.955
+
+
+ Partially Occupied:
+               1 P                -0.40924594303694E+00
+  
+ HOMO :        2 S                -0.10916696572490E+01
+ LUMO :        3 S                 0.23171521938657E-01
+  
+
+
+ Orbital Energies, all Irreps
+ ========================================
+
+ Irrep        no.  (spin)   Occup              E (au)                E (eV)
+ ---------------------------------------------------------------------------
+ S             1             2.00       -0.24380013662793E+02      -663.4139
+ S             2             2.00       -0.10916696572490E+01       -29.7058
+ P             1             5.00       -0.40924594303694E+00       -11.1361
+ S             3             0.00        0.23171521938657E-01         0.6305
+ P             2             0.00        0.42818717158446E+00        11.6516
+ D             1             0.00        0.11166683619357E+01        30.3861
+ S             4             0.00        0.15801599788495E+01        42.9983
+ F             1             0.00        0.34160293329535E+01        92.9549
+ P             3             0.00        0.45634501130520E+01       124.1778
+ S             5             0.00        0.48367571090263E+02      1316.1486
+
+
+ All Electron Calculation, thus no Orbital Energies of the Core Orbitals are calculated
+
+
+
+ =======================================
+ M U L L I K E N   P O P U L A T I O N S
+ =======================================
+  
+ The survey below gives for each atom:
+ a) the total charge (Z minus electrons)
+ b) the net spin polarization (nr of electrons spin-A minus spin-B)
+ c) for each spin the atomic electron valence density (integrated) per L-value.
+
+ Atom              Charge    Spin density          S         P         D         F
+ ----              ------    ------------       ------    ------    ------    ------
+ 1 F              -0.0000                       4.0000    5.0000    0.0000    0.0000
+
+ Populations of individual BAS functions
+ ----------------------------------------
+ 1 F            0.5735  1.4020  1.1462  0.8789 -0.0006  0.3652  0.3652  0.3652  0.9146  0.9146
+                0.9146  0.3869  0.3869  0.3869  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+                0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+
+ Gross Charges per Atom (Z minus electrons)
+ ==========================================
+            -0.0000
+ Net Total: -0.00000000
+
+
+
+ =======================================================================
+ Electrostatic potential at the Nuclei due to electrons and other nuclei
+ =======================================================================
+  
+         Atom                  Potential
+         ----                  ---------
+     1)   F                  26.51041126
+ 
+ 
+ ========================
+ No memory problems found
+ ========================
+ 
+ Maximum number of active allocate calls:         447
+ 
+ *******************************************************************************
+
+                             A D F   E X I T
+ NORMAL TERMINATION
+
+
+
+ =================
+ Timing Statistics
+ =================
+  
+ Total Used :                     CPU=        0.50      System=        0.03     Elapsed=        0.53
+
+ Calls  Section                     ( Mean, Percentage )
+ ---------------------------------------------------------------------------------------------------
+     3  ><      ................      0.00    0.20             0.00    0.00             0.00    0.15
+     1  INIT    ................      0.01    1.79             0.01   55.55             0.03    4.78
+     1  GEOMET  ................      0.01    1.39             0.00    3.70             0.01    1.59
+     1  INPUTA  ................      0.00    0.20             0.00    0.00             0.00    0.29
+     1  MAINSY  ................      0.01    1.19             0.00    0.00             0.01    1.12
+     1  SYMFIT  ................      0.00    0.00             0.00    3.70             0.00    0.15
+     1  CORORT  ................      0.00    0.00             0.00    0.00             0.00    0.05
+     1  SYMORB  ................      0.00    0.20             0.00    0.00             0.00    0.12
+     1  CLSMAT  ................      0.00    0.99             0.00    0.00             0.01    0.99
+     1  ORTHON  ................      0.00    0.40             0.00    0.00             0.00    0.28
+     1  GENPT   ................      0.01    2.78             0.00    0.00             0.01    2.78
+     1  PTBAS   ................      0.00    0.80             0.00    0.00             0.00    0.65
+    13  FOCKY   ................      0.03   75.35             0.00   22.23             0.03   72.34
+    13  FOCKTR  ................      0.00    1.99             0.00    0.00             0.00    2.04
+    13  SDIIS   ................      0.00    4.17             0.00    3.70             0.00    3.96
+     1  COREPS  ................      0.02    4.17             0.00    3.70             0.02    4.14
+     1  POPAN   ................      0.00    0.99             0.00    0.00             0.01    0.99
+     1  DEBYE   ................      0.00    0.20             0.00    0.00             0.00    0.11
+     1  EXIT PROCEDURE .........      0.02    3.18             0.00    7.41             0.02    3.48
+
+
+ Currently Open Files (EXIT00)
+ ====================
+
+ Unit    Access Format  Status   Type       Ident (file)
+ -------------------------------------------------------
+   3      SEQ    FORM   TRANSP  NORMAL      LOGFILE
+                                          ( logfile )
+
+
+ Buffered I/O statistics
+ =======================
+ Memory available:                     67108864
+ Number of records fitting in memory:     16131
+ Input :   0.1% of                        27818  *4k bytes
+ Output:  13.5% of                         1383  *4k bytes
+ Records from serial files evicted:           0
+                    others evicted:           0
+ Hash table lookups:      71870 with          0 conflicts (  0.00%)
+
+ ***************************************************************************************************
+ (LOGFILE)
+ <Apr18-2019> <21:31:26>  ADF development version  RunTime: Apr18-2019 21:31:26  Nodes: 1  Procs: 1
+ <Apr18-2019> <21:31:26>  Hydrogen (TZ2P)
+ <Apr18-2019> <21:31:26>  RunType   : CREATE
+ <Apr18-2019> <21:31:26>  Net Charge: 0 (Nuclei minus Electrons)
+ <Apr18-2019> <21:31:26>  Symmetry  : ATOM
+  Coordinates
+    Atom         X           Y           Z   (Angstrom)
+    1.H         0.000000    0.000000    0.000000
+ <Apr18-2019> <21:31:26>  >>>> CORORT
+ <Apr18-2019> <21:31:26>  >>>> CLSMAT
+ <Apr18-2019> <21:31:26>  >>>> ORTHON
+ <Apr18-2019> <21:31:26>  >>>> GENPT
+ <Apr18-2019> <21:31:26>  Block Length=  64
+ <Apr18-2019> <21:31:26>  >>>> PTBAS
+ <Apr18-2019> <21:31:26>  >>>> CYCLE
+ <Apr18-2019> <21:31:26>              |Error|         MaxErr       Wt(A-DIIS)
+ <Apr18-2019> <21:31:26>      1      0.00000000      0.00000000
+ <Apr18-2019> <21:31:26>      2      0.03100286      0.02644424
+ <Apr18-2019> <21:31:26>      3      0.00958001      0.00932852    100.0
+ <Apr18-2019> <21:31:26>      4      0.00232093      0.00228640      1.3
+ <Apr18-2019> <21:31:26>      5      0.00003155      0.00002984      0.0
+ <Apr18-2019> <21:31:26>      6      0.00000096      0.00000091      0.0
+ <Apr18-2019> <21:31:26>      7      0.00000000      0.00000000      0.0
+ <Apr18-2019> <21:31:26>  SCF converged
+ <Apr18-2019> <21:31:26>      8      0.00000000      0.00000000      0.0
+ <Apr18-2019> <21:31:26>  >>>> POPAN
+ <Apr18-2019> <21:31:26>  >>>> DEBYE
+ <Apr18-2019> <21:31:26>  NORMAL TERMINATION
+ <Apr18-2019> <21:31:26>  END
+ <Apr18-2019> <21:31:26>  ADF development version  RunTime: Apr18-2019 21:31:26  Nodes: 1  Procs: 1
+ <Apr18-2019> <21:31:26>  Fluorine (TZ2P)
+ <Apr18-2019> <21:31:26>  RunType   : CREATE
+ <Apr18-2019> <21:31:26>  Net Charge: 0 (Nuclei minus Electrons)
+ <Apr18-2019> <21:31:26>  Symmetry  : ATOM
+  Coordinates
+    Atom         X           Y           Z   (Angstrom)
+    1.F         0.000000    0.000000    0.000000
+ <Apr18-2019> <21:31:26>  >>>> CORORT
+ <Apr18-2019> <21:31:26>  >>>> CLSMAT
+ <Apr18-2019> <21:31:26>  >>>> ORTHON
+ <Apr18-2019> <21:31:26>  >>>> GENPT
+ <Apr18-2019> <21:31:26>  Block Length=  76
+ <Apr18-2019> <21:31:26>  >>>> PTBAS
+ <Apr18-2019> <21:31:26>  >>>> CYCLE
+ <Apr18-2019> <21:31:26>              |Error|         MaxErr       Wt(A-DIIS)
+ <Apr18-2019> <21:31:26>      1      0.00000000      0.00000000
+ <Apr18-2019> <21:31:26>      2     11.37379478      4.77775941    100.0
+ <Apr18-2019> <21:31:26>      3      5.10737118      3.12542566    100.0
+ <Apr18-2019> <21:31:26>      4      0.96588425      0.45165556    100.0
+ <Apr18-2019> <21:31:26>      5      1.67496341      0.82531802    100.0
+ <Apr18-2019> <21:31:26>      6      0.19960756      0.09763484     97.6
+ <Apr18-2019> <21:31:26>      7      0.26650754      0.12651474    100.0
+ <Apr18-2019> <21:31:26>      8      0.03096878      0.01498150     14.1
+ <Apr18-2019> <21:31:26>      9      0.00605981      0.00290433      1.9
+ <Apr18-2019> <21:31:26>     10      0.00016558      0.00007919      0.0
+ <Apr18-2019> <21:31:26>     11      0.00000005      0.00000002      0.0
+ <Apr18-2019> <21:31:26>     12      0.00000000      0.00000000      0.0
+ <Apr18-2019> <21:31:26>  SCF converged
+ <Apr18-2019> <21:31:26>     13      0.00000000      0.00000000      0.0
+ <Apr18-2019> <21:31:26>  >>>> POPAN
+ <Apr18-2019> <21:31:26>  >>>> DEBYE
+ <Apr18-2019> <21:31:26>  NORMAL TERMINATION
+ <Apr18-2019> <21:31:26>  END
+
+
+ Parallel Execution: Process Information
+ ==============================================================================
+ Rank   Node Name                              NodeID   MyNodeRank  NodeMaster
+    0   BAZIS-cn076                               0          0          0
+    1   BAZIS-cn076                               0          1         -1
+    2   BAZIS-cn076                               0          2         -1
+    3   BAZIS-cn076                               0          3         -1
+    4   BAZIS-cn076                               0          4         -1
+    5   BAZIS-cn076                               0          5         -1
+    6   BAZIS-cn076                               0          6         -1
+    7   BAZIS-cn076                               0          7         -1
+    8   BAZIS-cn076                               0          8         -1
+    9   BAZIS-cn076                               0          9         -1
+   10   BAZIS-cn076                               0         10         -1
+   11   BAZIS-cn076                               0         11         -1
+ ==============================================================================
+
+
+May use up to 30736MB of RAM as shared memory on node 0
+
+
+XC
+  GGA blyp
+  DISPERSION Grimme3 BJDAMP
+END
+
+ANALYTICALFREQ
+END
+
+SCF
+  iterations 250
+END
+
+SYMMETRY nosym
+CHARGE -1
+
+ZLMFIT
+  Quality normal
+END
+
+BECKEGRID
+  Quality good
+End
+
+ATOMS
+    1.F        -3.680414    0.224820   -0.010605
+    2.H        -2.860915    0.344970    0.565513
+END
+
+Fragments
+H t21.H
+F t21.F
+End
+end input
+
+ *******************************************************************************
+ *                                                                             *
+ *  -------------------------------------                                      *
+ *   Amsterdam Density Functional  (ADF)         development version           *
+ *  -------------------------------------                                      *
+ *                                               r61132 2017-09-08             *
+ *                                                                             *
+ *                                                                             *
+ *                              =================                              *
+ *                              |               |                              *
+ *                              |     A D F     |                              *
+ *                              |               |                              *
+ *                              =================                              *
+ *                                                                             *
+ *                                                                             *
+ *   Online information and documentation:  https://www.scm.com/support/       *
+ *   E-mail:  support@scm.com   info@scm.com                                   *
+ *                                                                             *
+ *   Scientific publications using ADF results must be properly referenced     *
+ *   See the User Manuals (or the web site) for recommended citations          *
+ *   The terms and conditions of the End User License Agreement apply to       *
+ *   the use of ADF, https://www.scm.com/license-terms/                        *
+ *                                                                             *
+ **********************  x86_64_linux_intel / intelmpi  ************************
+ 
+ Licensed to: VU/FEW (+ SARA) / ALGEMEEN / Amsterdam / THE NETHERLANDS
+ SCM User ID: u7668
+  
+ ADF development version  RunTime: Apr18-2019 21:31:27  Nodes: 1  Procs: 12
+
+ Temporary files are created in /local/datastore0/tcst25/186795/kid_0.g3bGdS
+
+
+Communication costs MPI_COMM_WORLD:      2.560 usec per message,   0.0134 usec per 8-byte item
+Communication costs for intra-node:      2.550 usec per message,   0.0134 usec per 8-byte item
+
+ *** (NO TITLE) ***
+
+
+
+ ===========================
+ A T T A C H E D   F I L E S
+ ===========================
+  
+
+
+
+ ===============================
+ M O D E L   P A R A M E T E R S
+ ===============================
+  
+ DENSITY FUNCTIONAL POTENTIAL (scf)
+    LDA:                               Exchange only                           == Not Default ==
+    Gradient Corrections:              Becke88 LYP                             == Not Default ==
+
+ SPIN  (restricted / unrestr.)
+    Molecule:                          Restricted                               
+    Fragments:                         Restricted                               
+
+ OTHER ASPECTS
+    Relativistic Corrections:          ---                                      
+
+    Nuclear Charge Density Model:      Point Charge Nuclei                      
+    Core Treatment:                    Frozen Orbital(s)                        
+
+    Hyperfine or Zeeman Interaction:   ---                                      
+
+ Settings for Grimme 3 dispersion correction
+
+      damping                        BJ
+      s6                          1.000
+      a1                          0.430
+      s8                          2.700
+      a2                          4.236
+
+ Other (technical) parameters
+
+      alpha                      14.000
+      version                         4
+ 
+
+
+ Fragment File(s)
+ ----------------
+ F:
+         file : t21.F
+         jobid: ADF development version  RunTime: Apr18-2019 21:31:26  Nodes: 1  Procs: 1
+         title: Fluorine (TZ2P)
+ H:
+         file : t21.H
+         jobid: ADF development version  RunTime: Apr18-2019 21:31:26  Nodes: 1  Procs: 1
+         title: Hydrogen (TZ2P)
+
+
+
+                                        ************************************
+                                        *  R U N   T Y P E : SINGLE POINT  *
+                                        ************************************
+  
+
+
+
+ ===============
+ G E O M E T R Y  ***  Linear Molecule  ***
+ ===============
+  
+
+ ATOMS
+ =====                            X Y Z                    CHARGE
+                                (Angstrom)             Nucl     +Core       At.Mass
+                       --------------------------    ----------------       -------
+    1  F              -3.6804    0.2248   -0.0106      9.00      9.00       18.9984
+    2  H              -2.8609    0.3450    0.5655      1.00      1.00        1.0078
+
+
+ FRAGMENTS
+ =========                                     Atoms in this Fragment     Cart. coord.s (Angstrom)
+                                               -------------------------------------------------------
+    1  F                                                 1  F           -3.6804    0.2248   -0.0106
+    2  H                                                 2  H           -2.8609    0.3450    0.5655
+
+
+ Interatomic Distance Matrix (Angstrom)
+ --------------------------------------
+
+   1)     0.000
+   2)     1.009   0.000
+
+
+
+ =====================================
+ S Y M M E T R Y ,   E L E C T R O N S
+ =====================================
+  
+ Symmetry: NOSYM
+
+ Irreducible Representations, including subspecies
+ -------------------------------------------------
+ A
+
+
+ Configuration of Valence Electrons
+ ==================================
+ ( determined in the SCF procedure )
+
+ Total:   11
+
+ ===============
+ W A R N I N G :
+ ===============
+
+ The number of electrons does not correspond to doubly occupied orbitals,
+ i.e. there would be one orbital with 0.5-alpha and 0.5-beta electrons.
+
+ Normally, this corresponds to a doublet that should be treated within
+ the UNRESTRICTED framework. For example, for a doublet:
+
+   CHARGE  -1.0 1.0
+   Unrestricted
+
+ See the online manual (http://www.scm.com) for more information on
+ how to use the UNRESTRICTED framework.
+
+ If you are definitely certain that for this job the restricted open-shell
+ is appropriate, you can overcome this warning by placing on input:
+   ALLOW ROKS
+
+ In case of doubt, contact support@scm.com with this problem.
+
+ Net Charge: -1 (Nuclei minus Electrons)
+
+ Aufbau principle for MO occupations will be applied through SCF cycle no.     125
+ Thereafter, the program will assign electrons to MOs that are spatially
+ similar to the occupied MOs in a "reference" cycle ("KeepOrbitals").
+ The reference cycle is always the PREVIOUS cycle: it will evolve with
+ the SCF procedure.
+1
+ ***************************************************************************************************
+
+
+
+                                      ****************************************
+                                      *  B U I L D : (Fragments, Functions)  *
+                                      ****************************************
+  
+
+
+
+ =======
+ S F O s  ***  (Symmetrized Fragment Orbitals)  ***
+ =======
+  
+ SFOs are linear combinations of (valence) Fragment Orbitals (FOs), such that the SFOs transform as the
+ irreducible representations of the (molecular) symmetry group. Each SFO is therefore characterized by
+ an irrep of the molecule and by a few (or only one) generating FOs.
+ The SFOs constitute a symmetry-adapted basis for the Fock matrix. The MO eigenvector coefficients in
+ this basis provide a direct interpretation of the MOs in terms of Frontier Orbital Theory.
+
+ The SFOs are combined with auxiliary Core Functions (CFs) to ensure orthogonalization on the (frozen)
+ Core Orbitals (COs). The Core-orthogonalized SFOs (CSFOs) constitute the true Fock basis.
+
+ The FOs, and hence also the (C)SFOs are combinations of the elementary basis functions (BAS). The basis
+ functions that participate in the description of the SFOs depend on the irrep. The indices of the
+ involved functions are printed below for each irrep.
+ (The complete list of primitive basis functions is printed in another section)
+
+ Total nr. of (C)SFOs (summation over all irreps) :    37
+
+ NOTE: a (C)SFO that is defined as a combination of more than one FO is usually NOT normalized.
+
+
+
+                                       === A ===
+ Nr. of SFOs :   37
+ Cartesian basis functions that participate in this irrep (total number =    42) :
+      1     2     3     4     5     6     9    12     7    10
+     13     8    11    14    15    16    17    18    19    20
+     21    22    23    24    25    26    27    28    29    30
+     31    32    33    34    35    36    37    38    39    40
+     41    42
+
+    SFO  (index         Fragment          Generating    Expansion in Fragment Orbitals
+  indx  incl.CFs)   Occup   Orb.Energy   FragmentType  Coeff.   Orbital     on Fragment
+ --------------------------------------------------------------------------------------
+     1       1      2.000     -24.380 au  F             1.00      1 S               1
+                        (    -663.414 eV)
+     2       2      2.000      -1.092 au  F             1.00      2 S               1
+                        (     -29.706 eV)
+     3       3       --         0.023 au  F             1.00      3 S               1
+                        (       0.631 eV)
+     4       4       --         1.580 au  F             1.00      4 S               1
+                        (      42.998 eV)
+     5       5       --        48.368 au  F             1.00      5 S               1
+                        (    1316.149 eV)
+     6       6      1.667      -0.409 au  F             1.00      1 P:x             1
+                        (     -11.136 eV)
+     7       7       --         0.428 au  F             1.00      2 P:x             1
+                        (      11.652 eV)
+     8       8       --         4.563 au  F             1.00      3 P:x             1
+                        (     124.178 eV)
+     9       9      1.667      -0.409 au  F             1.00      1 P:y             1
+                        (     -11.136 eV)
+    10      10       --         0.428 au  F             1.00      2 P:y             1
+                        (      11.652 eV)
+    11      11       --         4.563 au  F             1.00      3 P:y             1
+                        (     124.178 eV)
+    12      12      1.667      -0.409 au  F             1.00      1 P:z             1
+                        (     -11.136 eV)
+    13      13       --         0.428 au  F             1.00      2 P:z             1
+                        (      11.652 eV)
+    14      14       --         4.563 au  F             1.00      3 P:z             1
+                        (     124.178 eV)
+    15      15       --         1.117 au  F             1.00      1 D:z2            1
+                        (      30.386 eV)
+    16      16       --         1.117 au  F             1.00      1 D:x2-y2         1
+                        (      30.386 eV)
+    17      17       --         1.117 au  F             1.00      1 D:xy            1
+                        (      30.386 eV)
+    18      18       --         1.117 au  F             1.00      1 D:xz            1
+                        (      30.386 eV)
+    19      19       --         1.117 au  F             1.00      1 D:yz            1
+                        (      30.386 eV)
+    20      20       --         3.416 au  F             1.00      1 F:z3            1
+                        (      92.955 eV)
+    21      21       --         3.416 au  F             1.00      1 F:z             1
+                        (      92.955 eV)
+    22      22       --         3.416 au  F             1.00      1 F:xyz           1
+                        (      92.955 eV)
+    23      23       --         3.416 au  F             1.00      1 F:z2x           1
+                        (      92.955 eV)
+    24      24       --         3.416 au  F             1.00      1 F:z2y           1
+                        (      92.955 eV)
+    25      25       --         3.416 au  F             1.00      1 F:x             1
+                        (      92.955 eV)
+    26      26       --         3.416 au  F             1.00      1 F:y             1
+                        (      92.955 eV)
+    27      27      1.000      -0.240 au  H             1.00      1 S               2
+                        (      -6.532 eV)
+    28      28       --         0.088 au  H             1.00      2 S               2
+                        (       2.394 eV)
+    29      29       --         1.502 au  H             1.00      3 S               2
+                        (      40.877 eV)
+    30      30       --         0.406 au  H             1.00      1 P:x             2
+                        (      11.052 eV)
+    31      31       --         0.406 au  H             1.00      1 P:y             2
+                        (      11.052 eV)
+    32      32       --         0.406 au  H             1.00      1 P:z             2
+                        (      11.052 eV)
+    33      33       --         2.570 au  H             1.00      1 D:z2            2
+                        (      69.925 eV)
+    34      34       --         2.570 au  H             1.00      1 D:x2-y2         2
+                        (      69.925 eV)
+    35      35       --         2.570 au  H             1.00      1 D:xy            2
+                        (      69.925 eV)
+    36      36       --         2.570 au  H             1.00      1 D:xz            2
+                        (      69.925 eV)
+    37      37       --         2.570 au  H             1.00      1 D:yz            2
+                        (      69.925 eV)
+
+
+
+ ================================
+ (Slater-type)  F U N C T I O N S  ***  (Basis and Fit)  ***
+ ================================
+  
+
+ Atom Type    1  (F)
+ ==============
+
+ Valence Basis Sets:  10
+ -----------------------
+   1 S   10.880000
+   1 S    7.700000
+   2 S    3.240000
+   2 S    1.940000
+   2 S    0.740000
+   2 P    4.540000
+   2 P    2.300000
+   2 P    1.240000
+   3 D    2.000000
+   4 F    3.000000
+
+ Atom Type    2  (H)
+ ==============
+
+ Valence Basis Sets:   5
+ -----------------------
+   1 S    0.690000
+   1 S    0.920000
+   1 S    1.580000
+   2 P    1.250000
+   3 D    2.500000
+
+
+ BAS: List of all Elementary Cartesian Basis Functions
+ =====================================================
+
+ The numbering in the list below (to the right of the function characteristics) is referred
+ to in print-outs of MO eigenvectors and Mulliken populations in the BAS representation
+ (as contrasted to the SFO representation).
+
+ Notes:
+ 1. The functions are characterized by a polynomial prefactor (powers of x,y,z and r) and
+    an exponential decay factor alpha.
+ 2. Since the basis sets are specific for an atom TYPE, the individual functions occur on
+    all atoms of that type.
+ 3. The word 'Core' in the left margin signals that it is a Core Function (CF) : not a
+    degree of freedom in the valence set, but only used to ensure orthogonalization of
+    the other valence basis functions on the frozen Core Orbitals.
+
+
+ (power of) X  Y  Z  R     Alpha  on Atom
+            ==========     =====     ==========
+
+ F                                    1
+                                  ---------------------------------------------------------------------------
+            0  0  0  0    10.880      1
+            0  0  0  0     7.700      2
+            0  0  0  1     3.240      3
+            0  0  0  1     1.940      4
+            0  0  0  1     0.740      5
+            1  0  0  0     4.540      6
+            0  1  0  0     4.540      7
+            0  0  1  0     4.540      8
+            1  0  0  0     2.300      9
+            0  1  0  0     2.300     10
+            0  0  1  0     2.300     11
+            1  0  0  0     1.240     12
+            0  1  0  0     1.240     13
+            0  0  1  0     1.240     14
+            2  0  0  0     2.000     15
+            1  1  0  0     2.000     16
+            1  0  1  0     2.000     17
+            0  2  0  0     2.000     18
+            0  1  1  0     2.000     19
+            0  0  2  0     2.000     20
+            3  0  0  0     3.000     21
+            2  1  0  0     3.000     22
+            2  0  1  0     3.000     23
+            1  2  0  0     3.000     24
+            1  1  1  0     3.000     25
+            1  0  2  0     3.000     26
+            0  3  0  0     3.000     27
+            0  2  1  0     3.000     28
+            0  1  2  0     3.000     29
+            0  0  3  0     3.000     30
+
+ H                                    2
+                                  ---------------------------------------------------------------------------
+            0  0  0  0     0.690     31
+            0  0  0  0     0.920     32
+            0  0  0  0     1.580     33
+            1  0  0  0     1.250     34
+            0  1  0  0     1.250     35
+            0  0  1  0     1.250     36
+            2  0  0  0     2.500     37
+            1  1  0  0     2.500     38
+            1  0  1  0     2.500     39
+            0  2  0  0     2.500     40
+            0  1  1  0     2.500     41
+            0  0  2  0     2.500     42
+
+ Total number of charge fitting functions (nprimf)       135
+ Total number of Cartesian basis functions (naos)         42
+ Total number of Cartesian core functions  (ncos)          0
+
+1
+ ***************************************************************************************************
+
+
+
+                                              ***********************
+                                              *  T E C H N I C A L  *
+                                              ***********************
+  
+
+
+
+ =============================================================
+ P A R A L L E L I Z A T I O N  and  V E C T O R I Z A T I O N
+ =============================================================
+  
+ Nr of parallel processes:                               12
+ Maximum vector length in NumInt loops:                 128
+
+ IO buffersize (Mb):                                     64.000000
+
+
+
+ =====================
+ S C F   U P D A T E S
+ =====================
+  
+ Max. nr. of cycles:                               250
+ Convergence criterion:                              0.0000010000
+   secondary criterion:                              0.0010000000
+
+ Mix parameter (when DIIS does not apply):           0.2000000000
+ Mixed ADIIS+DIIS will be used
+    Max number of expansion vectors:                10
+    Pure ADIIS when Max([F,P]) is above              0.1000000000
+    Pure DIIS when Max([F,P]) is below               0.0010000000
+ Automatic ElectronSmearing (in case of problematic SCF convergence) disabled
+
+
+
+ =================
+ P R E C I S I O N  ***  (General: NumInt, NeglectFunctionTails, ...)  ***
+ =================
+  
+
+ NumInt:           Target precision:                 6.0000000000
+ -------           Initial precision:                6.0000000000
+                   Min. precision (optimization):    6.0000000000
+
+ Neglect Functions:          Basis functions:        0.1000000000E-07
+ ------------------          Fit functions:          0.1000000000E-07
+
+
+
+ ===========================
+ L I N E A R   S C A L I N G
+ ===========================
+  
+
+ Cut-off radii density fit:                        0.1000000000E-09
+ Overlap cut-off criterion AO matrix elements:     0.1000000000E-07
+ Cut-offs for Coulomb potential and fitted density:0.1000000000E-09
+ Cut-off criterion for Coulomb multipole terms:    0.1000000000E-09
+ Progressive Convergence parameter:                 0.000000000    
+1
+ ***************************************************************************************************
+
+
+
+                                            ***************************
+                                            *  C O M P U T A T I O N  *
+                                            ***************************
+  
+
+ Number of elements of the density matrix on this node (used, total):       465       903
+
+
+
+ ===========================================
+ Numerical Integration : Fuzzy Cells (Becke)
+ ===========================================
+  
+ Becke grid quality: GOOD           
+  
+ Lebedev angular grid order:             min:  11 max:  31
+ Nr. of radial points:                   min:  54 max:  65
+
+ Total nr. of points:      25818
+ Nr. of blocks:              202
+ Block length:               128
+ Nr. of dummy points:         38
+
+
+ Test of Precision of the Numerical Integration Grid
+ ===================================================
+
+ Integral of the Total Core Density:                   0.00000000000000
+
+
+
+ ========================
+ Density Fitting (zlmFit)
+ ========================
+  
+ ZlmFit Fit Quality: NORMAL         
+  
+ Max L-expansion:                        min:   6 max:   7
+ Nr. of radial interpolation points:     min:  39 max:  51
+
+
+
+ =====
+ S C F  ***  ScaSCF  ***
+ =====
+  
+ Initial density matrix is calculated as sum of fragments
+
+ CYCLE    1
+ SCF Error: norm([F,P])=      1.324008495035, max([F,P])=      1.139335461860
+ orbitals (Q,E):
+ ---------------
+ A :1...16           ( 2.00   -24.4314)  ( 2.00    -1.1813)  ( 2.00    -0.5665)  ( 2.00    -0.4584)
+                     ( 2.00    -0.4584)  ( 1.00    -0.0669)  ( 0.00     0.0482)  ( 0.00     0.1614)
+                     ( 0.00     0.3585)  ( 0.00     0.3585)  ( 0.00     0.5873)  ( 0.00     0.6039)
+                     ( 0.00     0.6039)  ( 0.00     0.7708)  ( 0.00     1.0672)  ( 0.00     1.0672)
+
+ CYCLE    2
+  SDIIS (wt  0.000):  0.1961  0.8039
+ A-DIIS (wt  1.000):  0.6758  0.3242
+  DIIS coefficients:  0.6758  0.3242
+ SCF Error: norm([F,P])=      0.641994211764, max([F,P])=      0.259997873910
+ orbitals (Q,E):
+ ---------------
+ A :1...7            ( 2.00   -24.1296)  ( 2.00    -0.9769)  ( 2.00    -0.3780)  ( 2.00    -0.2586)
+                     ( 2.00    -0.2586)  ( 1.00     0.0295)  ( 0.00     0.1237)
+
+ CYCLE    3
+  SDIIS (wt  0.000):  0.0054  0.0330  0.9615
+ A-DIIS (wt  1.000):  0.4980  0.0000  0.5020
+  DIIS coefficients:  0.4980  0.0000  0.5020
+ SCF Error: norm([F,P])=      0.080435357233, max([F,P])=      0.034184207359
+ orbitals (Q,E):
+ ---------------
+ A :1...7            ( 2.00   -24.2067)  ( 2.00    -0.9770)  ( 2.00    -0.3723)  ( 2.00    -0.2572)
+                     ( 2.00    -0.2572)  ( 1.00     0.0573)  ( 0.00     0.1490)
+
+ CYCLE    4
+  SDIIS (wt  0.000): -0.8842  1.8842
+ A-DIIS (wt  1.000):  0.0000  1.0000
+  DIIS coefficients:  0.0000  1.0000
+ SCF Error: norm([F,P])=      0.305747027901, max([F,P])=      0.125399426527
+ orbitals (Q,E):
+ ---------------
+ A :1...7            ( 2.00   -23.7728)  ( 2.00    -0.6914)  ( 2.00    -0.1157)  ( 2.00     0.0200)
+                     ( 2.00     0.0200)  ( 1.00     0.1770)  ( 0.00     0.2552)
+
+ CYCLE    5
+  SDIIS (wt  0.000): -0.2698  1.0658  0.2040
+ A-DIIS (wt  1.000): -0.0000  0.7703  0.2297
+  DIIS coefficients: -0.0000  0.7703  0.2297
+ SCF Error: norm([F,P])=      0.753369168546, max([F,P])=      0.301163973653
+ orbitals (Q,E):
+ ---------------
+ A :1...7            ( 2.00   -23.9482)  ( 2.00    -0.7700)  ( 2.00    -0.1793)  ( 2.00    -0.0537)
+                     ( 2.00    -0.0537)  ( 1.00     0.1668)  ( 0.00     0.2451)
+
+ CYCLE    6
+  SDIIS (wt  0.000):  0.1647 -0.0720 -0.0756 -0.1587  1.1417
+ A-DIIS (wt  1.000):  0.0000  0.4926  0.0238  0.0000  0.4836
+  DIIS coefficients:  0.0000  0.4926  0.0238  0.0000  0.4836
+ SCF Error: norm([F,P])=      0.177484474353, max([F,P])=      0.070182212746
+ orbitals (Q,E):
+ ---------------
+ A :1...7            ( 2.00   -24.0517)  ( 2.00    -0.8147)  ( 2.00    -0.2169)  ( 2.00    -0.0965)
+                     ( 2.00    -0.0965)  ( 1.00     0.1605)  ( 0.00     0.2397)
+
+ CYCLE    7
+  SDIIS (wt  0.000):  0.3760  1.0281 -2.0000  0.0975 -0.8099  2.3083
+ A-DIIS (wt  1.000):  0.0000  0.0000  0.0000  0.0000  0.3862  0.6138
+  DIIS coefficients:  0.0000  0.0000  0.0000  0.0000  0.3862  0.6138
+ SCF Error: norm([F,P])=      0.140526070783, max([F,P])=      0.049031882256
+ orbitals (Q,E):
+ ---------------
+ A :1...7            ( 2.00   -24.0022)  ( 2.00    -0.8045)  ( 2.00    -0.2100)  ( 2.00    -0.0848)
+                     ( 2.00    -0.0848)  ( 1.00     0.1560)  ( 0.00     0.2381)
+
+ CYCLE    8
+  SDIIS (wt  0.911):  0.0211  0.0213 -0.0415 -0.0492  0.3171  0.2340  0.4971
+ A-DIIS (wt  0.089):  0.0000  0.0000  0.0000  0.0000  0.0000  0.0419  0.9581
+  DIIS coefficients:  0.0193  0.0194 -0.0378 -0.0448  0.2890  0.2170  0.5380
+ SCF Error: norm([F,P])=      0.031660878638, max([F,P])=      0.009775204581
+ orbitals (Q,E):
+ ---------------
+ A :1...7            ( 2.00   -24.0101)  ( 2.00    -0.8051)  ( 2.00    -0.2103)  ( 2.00    -0.0864)
+                     ( 2.00    -0.0863)  ( 1.00     0.1580)  ( 0.00     0.2385)
+
+ CYCLE    9
+  SDIIS (wt  0.997): -0.0003 -0.0015  0.0041 -0.0042  0.0333  0.0190  0.1416  0.8080
+ A-DIIS (wt  0.003):  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  1.0000
+  DIIS coefficients: -0.0003 -0.0015  0.0041 -0.0042  0.0332  0.0189  0.1413  0.8085
+ SCF Error: norm([F,P])=      0.004005994964, max([F,P])=      0.001262626840
+ orbitals (Q,E):
+ ---------------
+ A :1...7            ( 2.00   -24.0093)  ( 2.00    -0.8049)  ( 2.00    -0.2101)  ( 2.00    -0.0861)
+                     ( 2.00    -0.0861)  ( 1.00     0.1579)  ( 0.00     0.2385)
+
+ CYCLE   10
+  SDIIS (wt  1.000):  0.0000  0.0001 -0.0001 -0.0002  0.0027  0.0030  0.0184  0.1099  0.8662
+  DIIS coefficients:  0.0000  0.0001 -0.0001 -0.0002  0.0027  0.0030  0.0184  0.1099  0.8662
+ SCF Error: norm([F,P])=      0.000037278261, max([F,P])=      0.000017263642
+ orbitals (Q,E):
+ ---------------
+ A :1...7            ( 2.00   -24.0093)  ( 2.00    -0.8049)  ( 2.00    -0.2101)  ( 2.00    -0.0861)
+                     ( 2.00    -0.0861)  ( 1.00     0.1578)  ( 0.00     0.2385)
+
+ CYCLE   11
+  SDIIS (wt  1.000): -0.0000 -0.0000  0.0000 -0.0000  0.0000  0.0001  0.0003  0.0033  0.1321  0.8641
+  DIIS coefficients: -0.0000 -0.0000  0.0000 -0.0000  0.0000  0.0001  0.0003  0.0033  0.1321  0.8641
+ SCF Error: norm([F,P])=      0.000009364866, max([F,P])=      0.000004150266
+ orbitals (Q,E):
+ ---------------
+ A :1...7            ( 2.00   -24.0093)  ( 2.00    -0.8049)  ( 2.00    -0.2101)  ( 2.00    -0.0861)
+                     ( 2.00    -0.0861)  ( 1.00     0.1578)  ( 0.00     0.2385)
+
+ CYCLE   12
+  SDIIS (wt  1.000):  0.0000 -0.0000  0.0000 -0.0000 -0.0000 -0.0000 -0.0001 -0.0055 -0.0178  1.0234
+  DIIS coefficients:  0.0000 -0.0000  0.0000 -0.0000 -0.0000 -0.0000 -0.0001 -0.0055 -0.0178  1.0234
+ SCF Error: norm([F,P])=      0.000000102965, max([F,P])=      0.000000033701
+ orbitals (Q,E):
+ ---------------
+ A :1...7            ( 2.00   -24.0093)  ( 2.00    -0.8049)  ( 2.00    -0.2101)  ( 2.00    -0.0861)
+                     ( 2.00    -0.0861)  ( 1.00     0.1578)  ( 0.00     0.2385)
+
+ SCF CONVERGED
+
+ CYCLE   13
+1
+ ***************************************************************************************************
+
+
+
+                                                *******************
+                                                *  R E S U L T S  *
+                                                *******************
+  
+ *** Setting up for NEW gradients in Focky
+ *** Using FIT density in Focky
+ *** Setting up for NEW Hessian in Focky
+
+ Orbital Energies, per Irrep and Spin:
+ ======================================
+                        Occup              E (au)              E (eV)       Diff (eV) with prev. cycle
+                        -----      --------------------        ------       --------------------------
+ A
+               1        2.000     -0.24009269830888E+02      -653.325              -1.81E-07
+               2        2.000     -0.80487509303603E+00       -21.902              -1.72E-07
+               3        2.000     -0.21010645996499E+00        -5.717              -1.76E-07
+               4        2.000     -0.86070097837835E-01        -2.342              -1.40E-07
+               5        2.000     -0.86065944470843E-01        -2.342              -1.40E-07
+               6        1.000      0.15784812089874E+00         4.295              -9.07E-08
+               7        0.000      0.23849300079233E+00         6.490
+               8        0.000      0.40203174575564E+00        10.940
+               9        0.000      0.64345566676054E+00        17.509
+              10        0.000      0.64346023467642E+00        17.509
+              11        0.000      0.85229886214805E+00        23.192
+              12        0.000      0.87918180791535E+00        23.924
+              13        0.000      0.87919554083490E+00        23.924
+              14        0.000      0.10476337485890E+01        28.508
+              15        0.000      0.13915775397151E+01        37.867
+              16        0.000      0.13915792313061E+01        37.867
+
+
+ Partially Occupied:
+               6 A                 0.15784812089874E+00
+  
+ HOMO :        5 A                -0.86065944470843E-01
+ LUMO :        7 A                 0.23849300079233E+00
+  
+
+
+ All Electron Calculation, thus no Orbital Energies of the Core Orbitals are calculated
+
+ Integrated fractional orbital density (NFOD):         1.000
+
+
+ Fit test: (difference of exact and fit density, squared integrated, result summed over spins)
+         Sum-of-Fragments:                             0.00000000067000
+         Orthogonalized Fragments:                     0.00001259990518
+         SCF:                                          0.00001997660055
+
+
+
+ ==========================
+ Electron Density at Nuclei
+ ==========================
+  
+ The electron density is calculated at points on a small sphere around the center of a nucleus.
+ The printed electron density is the average electron density on these points.
+ The radius of the sphere is the printed approximate finite nuclear radius.
+
+         Atom        Nuclear Radius (Angstrom)             Electron Density (a.u.)
+         ----        -------------------------             -----------------------
+     1)   F                 0.0000361580                              447.16676
+     2)   H                 0.0000181514                                0.40493
+
+
+
+ =======================================
+ M U L L I K E N   P O P U L A T I O N S
+ =======================================
+  
+ The survey below gives for each atom:
+ a) the total charge (Z minus electrons)
+ b) the net spin polarization (nr of electrons spin-A minus spin-B)
+ c) for each spin the atomic electron valence density (integrated) per L-value.
+
+ Atom              Charge    Spin density          S         P         D         F
+ ----              ------    ------------       ------    ------    ------    ------
+ 1 F              -0.6403                       4.0398    5.5753    0.0224    0.0028
+ 2 H              -0.3597                       1.1726    0.1757    0.0114    0.0000
+
+ Populations of individual BAS functions
+ ----------------------------------------
+ 1 F            0.5742  1.4016  1.0986  0.8515  0.1139  0.3572  0.4117  0.3854  0.9132  0.9744
+                0.9448  0.4831  0.5749  0.5305  0.0202  0.0012  0.0133 -0.0130  0.0006  0.0001
+                0.0060  0.0043  0.0068 -0.0057  0.0002  0.0005 -0.0053 -0.0037  0.0011 -0.0015
+ 2 H            2.7353 -2.1651  0.6024  0.0851  0.0326  0.0580  0.0033  0.0014  0.0051  0.0000
+                0.0007  0.0008
+
+ Gross Charges per Atom (Z minus electrons)
+ ==========================================
+            -0.6403   -0.3597
+ Net Total: -1.00000000
+
+
+ Atom-Atom Population Matrix (off-diagonal elements not doubled)
+ ===============================================================
+
+     1 :     9.2193
+     2 :     0.4210    0.9387
+
+
+
+ =================================================
+ H I R S H F E L D   C H A R G E   A N A L Y S I S
+ =================================================
+  
+ For each fragment: the (numerical) integral of rho(scf) * rho(fragment)/rho(sum-of-fragments)
+ (nuclear charges are included, electrons are counted negative)
+
+ The fragments and their ordering are defined in the early G E O M E T R Y output section.
+ If you use single-atom fragments, this usually implies that all atoms of the same
+ chemical type are grouped together. This may not be the order in which you listed them
+ in the input file!
+
+    1  F                        -0.5231
+    2  H                        -0.4769
+
+ Sum of these charges (accuracy NumInt/Tails) =          -1.00000160
+
+
+
+ =============================
+ V O R O N O I   C H A R G E S
+ =============================
+  
+ For each atom: the (numerical) integral of the total electronic charge density in its Voronoi cell,
+ i.e. the region of space that is closer to that atom than to any other atom.
+ (cf. Wigner-Seitz cells in crystals)
+
+ Within the Voronoi cell the subintegrals over the atomic sphere and the remaining part are evaluated
+ separately to give the numbers of electrons (negative charge) in these regions.
+ The net total charge in the cell (including the nuclear charge) is also given.
+
+ Values are provided for
+    a) the Initial (sum-of-fragments) density
+    b) the Orthogonalized-Fragments density
+    c) the SCF density
+    d) the Voronoi Deformation Density (VDD): the difference SCF-Initial for the complete atomic cell
+
+
+  Atom                Initial                    OrthFrag                   SCF
+             Sphere RestCell NetTotal   Sphere RestCell NetTotal   Sphere RestCell NetTotal      VDD
+ -----       ------------------------   ------------------------   ------------------------    -----
+    1 F      -3.320   -5.299    0.381   -3.393   -5.302    0.304   -3.333   -5.812   -0.145   -0.526
+    2 H      -0.094   -1.287   -0.381   -0.092   -1.212   -0.304   -0.102   -1.753   -0.855   -0.474
+ ---------------------------------------------------------------------------------------------------
+ Total NetCharge:              -0.000                     -0.000                     -1.000   -1.000
+ (accuracy NumInt/Tails)
+
+ Remark: the 'NetTotal' Voronoi charges often do not match the Mulliken and/or Hirshfeld charges very
+ well. This is caused by the fact that chemically different atoms are not treated in accordance with
+ their relative sizes. (Voronoi cells are defined by boundary planes halfway between the atoms.)
+ However, the CHANGES in charge, comparing 'Initial' to 'SCF' for instance, do give a fair indication
+ of the flow of charge caused by the relaxation from sum-of-fragments to self-consistency.
+
+ Warning: the absolute accuracy of the VDD charges obtained using the Fuzzy Cells (Becke) integration
+ scheme is much poorer than the one obtained with an 'equivalent' Voronoi integration grid. 
+
+
+
+ =================================================================
+ M U L T I P O L E   D E R I V E D   C H A R G E   A N A L Y S I S
+ =================================================================
+
+ This charge analysis uses the atomic multipoles (obtained from the fitted density) up to some level X,
+ and reconstructs these multipoles exactly (up to level X) by distributing charges over all atoms.
+ This is achieved by using Lagrange multipliers and a weight function to keep the multipoles local.
+
+ Dummy atoms can be included (by setting INCDUM in MDC-block to 1) to obtain a fractional charge.
+ This is generally useful and necessary only for small symmetrical molecules, when there are not
+ enough degrees of freedom to reconstruct the multipoles.
+
+ Since the atomic multipoles are reconstructed up to level X,
+ the molecular multipoles are represented also up to level X.
+ The recommended level is to reconstruct up to quadrupole : -> MDC-q charges.
+
+ See: M. Swart, P.Th. van Duijnen, J.G. Snijders, J.Comput.Chem., (2001), p. 79-88.
+
+ ------------------------------------------------------------- 
+ Atomic electronic multipole moments from SCF equations (a.u.)
+ ------------------------------------------------------------- 
+
+   atom        charge        dip-x     dip-y     dip-z      quad-xx   quad-xy   quad-xz   quad-yy   quad-yz   quad-zz
+ --------------------------------------------------------------------------------------------------------------------
+    1 F     -0.725334    -0.039801 -0.005819 -0.027980     0.787085  0.155464  0.745843 -0.769594  0.109347 -0.017491
+    2 H     -0.274666    -0.631343 -0.092543 -0.443809    -0.194243 -0.038410 -0.184073  0.190028 -0.026900  0.004215
+
+ --------------------------------------- 
+ Multipole derived atomic charges (a.u.)
+ --------------------------------------- 
+
+ The MDC-m charges are just the Monopole terms in the multipole expansion, while for the MDC-d charges
+ also the Dipoles are reconstructed. The usually preferred charges are the MDC-q charges.
+ These reconstruct the Monopoles, Dipoles and Quadrupoles (both atomic AND molecular).
+
+        Atom    Level:     MDC-m        MDC-d        MDC-q
+ ---------------------------------------------------------
+     1     F           -0.725334    -0.291967    -0.910106
+     2     H           -0.274666    -0.708033    -0.089894
+
+ ------------------------------------------------ 
+ Average absolute deviations in atomic multipoles
+ ------------------------------------------------ 
+
+ Stated here are the average differences between the atomic multipoles
+ and the reconstructed atomic multipoles (from the distributed charges).
+ If these values are not zero, this means there are not enough degrees of freedom,
+ to be able to reconstruct the atomic multipoles. (This usually happens only
+ for small and/or highly symmetric molecules). If this is the case, one could add
+ dummy atoms as extra point charges (and setting INCDUM in MDC-block to 1).
+
+ Level:                                 MDC-d        MDC-q
+ ---------------------------------------------------------
+ Charge   (a.u.)                       0.0000       0.0000
+ Dipole   (Debye)                      0.0000       0.7500
+ Quad.    (a.u.)                       0.4684       0.1269
+
+ --------------------------------------- 
+ Represented molecular multipole moments
+ --------------------------------------- 
+
+ Given here are the Molecular multipole moments from the atomic charges, and from the Fit Density.
+ Note that the atomic charges represent the latter, NOT the ones from the Exact density.
+
+            Q (a.u.)             Dipole moment (Debye)                                          Quadrupole moment (a.u.)
+                                 x         y         z              xx        xy        xz        yy        yz        zz
+------------------------------------------------------------------------------------------------------------------------
+MDC-m        -1.0000       16.5966   -1.2384   -0.7091        -42.8329    4.6669    2.2287   21.4662   -0.2778   21.3667
+MDC-d        -1.0000       14.8908   -1.4885   -1.9083        -34.2366    5.0371    6.0750   17.4596   -0.7362   16.7769
+MDC-q        -1.0000       17.3239   -1.1317   -0.1978        -46.4981    4.5090    0.5888   23.1745   -0.0823   23.3236
+ 
+Fit.Dens.    -1.0000       14.8908   -1.4884   -1.9083        -34.3234    4.9524    5.6706   17.5447   -0.7953   16.7787
+
+
+
+ =============
+ Dipole Moment  ***  (Debye)  ***
+ =============
+  
+ Vector   :        14.89359448     -1.48806215     -1.90636698
+ Magnitude:        15.08866198
+
+ This molecular dipole moment is calculated with analytic integration
+ ************************************************************************************
+ Since the molecule is NOT NEUTRAL, the dipole moment depends on the choice of origin
+ ************************************************************************************
+
+
+
+ =========================================
+ Quadrupole Moment (Buckingham convention)  ***  (a.u.)  ***
+ =========================================
+  
+      quad-xx        quad-xy        quad-xz        quad-yy        quad-yz        quad-zz
+    -34.33779030     5.01073412     5.94485428    17.55140239    -0.75354807    16.78638792
+
+ This molecular quadrupole moment is calculated with analytic integration
+1
+
+
+
+ ===========================
+ B O N D I N G   E N E R G Y  ***  (decomposition)  ***
+ ===========================
+  
+*** IMPORTANT NOTE ***
+
+The bond energy is computed as an energy difference between molecule and
+fragments. In particular when the fragments are single atoms, they are usually
+computed as SPHERICALLY SYMMETRIC and SPIN-RESTRICTED. Obviously, this usually
+does NOT represent the true atomic groundstate.
+
+To obtain the 'real' bond energy, (atomic) correction terms must be applied
+for the true (multiplet) fragment ground state. See ref: E.J.Baerends,
+V.Branchadell, M.Sodupe, Chem.Phys.Lett.265 (1997) 481
+
+General theoretical background on the bond energy decomposition scheme used
+here (Morokuma-Ziegler) can be found in the review paper:
+F.M. Bickelhaupt and E.J. Baerends,
+"Kohn-Sham Density Functional Theory: Predicting and Understanding Chemistry"
+In: Rev. Comput. Chem.; Lipkowitz, K. B. and Boyd, D. B., Eds.;
+Wiley-VCH: New York, 2000, Vol. 15, 1-86.
+
+Symbols used in the Bickelhaupt-Baerends (BB) paper are given below to make
+the direct connection to that paper, where detailed explanations can be found
+on the meaning of the various terms.
+
+
+                                                   hartree              eV         kcal/mol           kJ/mol
+                                      --------------------     -----------       ----------      -----------
+
+Pauli Repulsion
+  Kinetic (Delta T^0):                   1.888879339634898         51.3990          1185.29          4959.25
+  Delta V^Pauli Coulomb:                -1.153565140978062        -31.3901          -723.87         -3028.68
+  Delta V^Pauli LDA-XC:                 -0.208124746224234         -5.6634          -130.60          -546.43
+  Delta V^Pauli GGA-Exchange:            0.013937031718191          0.3792             8.75            36.59
+  Delta V^Pauli GGA-Correlation:        -0.014778903435975         -0.4022            -9.27           -38.80
+                                      --------------------     -----------       ----------      -----------
+  Total Pauli Repulsion:                 0.526347580714817         14.3226           330.29          1381.93
+ (Total Pauli Repulsion =
+  Delta E^Pauli in BB paper)
+
+Steric Interaction
+  Pauli Repulsion (Delta E^Pauli):       0.526347580714817         14.3226           330.29          1381.93
+  Electrostatic Interaction:            -0.119502733010991         -3.2518           -74.99          -313.75
+ (Electrostatic Interaction =
+  Delta V_elstat in the BB paper)
+                                      --------------------     -----------       ----------      -----------
+  Total Steric Interaction:              0.406844847703826         11.0708           255.30          1068.17
+ (Total Steric Interaction =
+  Delta E^0 in the BB paper)
+
+Orbital Interactions
+  A:                                    -0.631487087631410        -17.1836          -396.26         -1657.97
+                                      --------------------     -----------       ----------      -----------
+  Total Orbital Interactions:           -0.631487087631410        -17.1836          -396.26         -1657.97
+
+Alternative Decomposition Orb.Int.
+  Kinetic:                              -1.522563187030672        -41.4311          -955.42         -3997.49
+  Coulomb:                               1.055965159436335         28.7343           662.63          2772.44
+  XC:                                   -0.164889060037073         -4.4869          -103.47          -432.92
+                                      --------------------     -----------       ----------      -----------
+  Total Orbital Interactions:           -0.631487087631410        -17.1836          -396.26         -1657.97
+
+  Residu (E=Steric+OrbInt+Res):          0.000001804639750          0.0000             0.00             0.00
+  Dispersion Energy:                    -0.000225919802503         -0.0061            -0.14            -0.59
+
+Total Bonding Energy:                   -0.224866355090337         -6.1189          -141.11          -590.39
+
+
+Summary of Bonding Energy (energy terms are taken from the energy decomposition above)
+======================================================================================
+
+  Electrostatic Energy:                 -0.119502733010991         -3.2518           -74.99          -313.75
+  Kinetic Energy:                        0.366316152604226          9.9680           229.87           961.76
+  Coulomb (Steric+OrbInt) Energy:       -0.097598176901977         -2.6558           -61.24          -256.24
+  XC Energy:                            -0.373855677979092        -10.1731          -234.60          -981.56
+  Dispersion Energy:                    -0.000225919802503         -0.0061            -0.14            -0.59
+                                      --------------------     -----------       ----------      -----------
+  Total Bonding Energy:                 -0.224866355090337         -6.1189          -141.11          -590.39
+
+
+Correction terms (incorporated in energies above; only for test purposes):
+
+1. Indication of fit-quality: 1st-order fit-correction used in the energy (hartree):   0.0004367858
+2. Electrostatic (Fit correction):   0.0000000000
+
+
+
+ =========================================
+ F R A G M E N T   E N E R G Y   T E R M S  ***  (summed over all fragments)  ***
+ =========================================
+  
+
+The energy terms below are (parts of) the Total Energy of the fragments from which the molecule
+ is built.
+
+Exchange and Correlation
+  Exchange LDA:                         -9.204607097970072       -250.4701         -5775.98        -24166.69
+  Exchange GGA:                         -1.005146919760201        -27.3514          -630.74         -2639.01
+  Correlation LDA:                       0.000000000000000          0.0000             0.00             0.00
+  Correlation GGA:                      -0.341016049426725         -9.2795          -213.99          -895.34
+                                      --------------------     -----------       ----------      -----------
+  Total XC:                            -10.550770067156996       -287.1011         -6620.71        -27701.04
+1
+
+
+
+ =======================================================
+ S F O   P O P U L A T I O N S ,   M O   A N A L Y S I S
+ =======================================================
+  
+ A Mulliken population analysis is performed on (input-)selected MOs. All populations refer to SFOs.
+ BAS populations may have been printed directly after the SCF part.
+
+
+                                       === A ===
+
+
+ SFO contributions (%) per orbital
+ (multiplication by the orbital occupation yields the SFO Gross Populations)
+
+ Orb.:        1      2      3      4      5      6      7      8      9     10
+ occup:     2.00   2.00   2.00   2.00   2.00   1.00   0.00   0.00   0.00   0.00
+ CF+SFO     ----   ----   ----   ----   ----   ----   ----   ----   ----   ----
+ ------
+      1:   99.97   0.00   0.00   0.00  -0.00   0.00  -0.00  -0.00  -0.00   0.00
+      2:   -0.00  91.02   4.86   0.00   0.00   0.16  -1.64   1.06  -0.00   0.00
+      3:    0.00  -0.03  -0.46   0.00   0.00  13.58 135.57   1.46  -0.00   0.00
+      4:    0.00  -0.00  -0.10   0.00  -0.00  -0.29  -1.59  -2.08   0.00   0.00
+      6:   -0.00   0.88  51.53   7.39  25.97   1.00   3.58   9.90   0.22   0.30
+      7:    0.00  -0.02   0.09   0.02   0.06   2.73 -16.90  -3.95   9.13  12.32
+      9:   -0.00   0.02   1.11  60.54  36.13   0.02   0.08   0.21   0.62   0.91
+     10:    0.00  -0.00   0.00   0.13   0.08   0.06  -0.36  -0.08  25.31  36.82
+     12:   -0.00   0.44  25.46  30.13  35.96   0.49   1.77   4.89   0.70   0.34
+     13:    0.00  -0.01   0.04   0.07   0.08   1.35  -8.35  -1.95  28.59  13.89
+     27:    0.01   6.16  14.77   0.00  -0.00  27.30  24.14  22.84  -0.00  -0.00
+     28:   -0.00   0.08   1.42  -0.00  -0.00  44.44 -30.83  69.27   0.00   0.00
+     29:    0.00  -0.42   0.68   0.00   0.00   0.13   8.35  -0.31  -0.00   0.00
+     30:    0.01   1.02  -0.03   0.12   0.42   5.44  -8.96   0.90   5.02   6.77
+     31:    0.00   0.02  -0.00   0.97   0.58   0.12  -0.19   0.02  13.91  20.24
+     32:    0.00   0.51  -0.02   0.48   0.58   2.69  -4.43   0.45  15.71   7.63
+
+
+ Summation over all MOs, multiplied by occupation: Total SFO Gross Populations in this Irrep
+ ===========================================================================================
+
+     2.00    1.92    0.13   -0.00   -0.00    1.73    0.03   -0.00    1.96    0.00   -0.00    1.84
+     0.02   -0.00    0.00    0.01    0.00    0.01    0.00    0.00    0.00    0.00    0.00    0.00
+     0.00    0.00    0.69    0.47    0.01    0.09    0.03    0.06    0.00    0.00    0.00    0.01
+     0.00
+
+
+
+ List of all MOs, ordered by energy, with the most significant SFO gross populations
+ ===================================================================================
+
+ Each percentage contribution in the table below corresponds to the indicated SFO.
+ In general, a SFO may be a linear combination of several Fragment Orbitals on the same,
+ or on symmetry-related Fragments. Only the first 'member' of such a combination is
+ specified here. A full definition of all SFOs is given in an earlier part of the output.
+ The numbering of the SFOs in this table does NOT include the Core Orbitals, and starts
+ from one for each symmetry representation, as in the SFO definition list earlier.
+
+       E(eV)  Occ       MO           %     SFO (first member)   E(eV)  Occ   Fragment
+ -------------------------------------------------------------------------------------
+
+      -5.717  2.00     3 A         51.53%     1 P:x           -11.136  1.67     1 F
+                                   25.46%     1 P:z           -11.136  1.67     1 F
+                                   14.77%     1 S              -6.532  1.00     2 H
+                                    4.86%     2 S             -29.706  2.00     1 F
+                                    1.42%     2 S               2.394  0.00     2 H
+                                    1.11%     1 P:y           -11.136  1.67     1 F
+      -2.342  2.00     4 A         60.54%     1 P:y           -11.136  1.67     1 F
+                                   30.13%     1 P:z           -11.136  1.67     1 F
+                                    7.39%     1 P:x           -11.136  1.67     1 F
+      -2.342  2.00     5 A         36.13%     1 P:y           -11.136  1.67     1 F
+                                   35.96%     1 P:z           -11.136  1.67     1 F
+                                   25.97%     1 P:x           -11.136  1.67     1 F
+       4.295  1.00     6 A         44.44%     2 S               2.394  0.00     2 H
+                                   27.30%     1 S              -6.532  1.00     2 H
+                                   13.58%     3 S               0.631  0.00     1 F
+                                    5.44%     1 P:x            11.052  0.00     2 H
+                                    2.73%     2 P:x            11.652  0.00     1 F
+                                    2.69%     1 P:z            11.052  0.00     2 H
+                                    1.35%     2 P:z            11.652  0.00     1 F
+       6.490  0.00     7 A        135.57%     3 S               0.631  0.00     1 F
+                                  -30.83%     2 S               2.394  0.00     2 H
+                                   24.14%     1 S              -6.532  1.00     2 H
+                                  -16.90%     2 P:x            11.652  0.00     1 F
+                                   -8.96%     1 P:x            11.052  0.00     2 H
+                                   -8.35%     2 P:z            11.652  0.00     1 F
+                                    8.35%     3 S              40.877  0.00     2 H
+                                   -4.43%     1 P:z            11.052  0.00     2 H
+                                    3.58%     1 P:x           -11.136  1.67     1 F
+                                    1.77%     1 P:z           -11.136  1.67     1 F
+                                   -1.64%     2 S             -29.706  2.00     1 F
+                                   -1.59%     4 S              42.998  0.00     1 F
+      10.940  0.00     8 A         69.27%     2 S               2.394  0.00     2 H
+                                   22.84%     1 S              -6.532  1.00     2 H
+                                    9.90%     1 P:x           -11.136  1.67     1 F
+                                    4.89%     1 P:z           -11.136  1.67     1 F
+                                   -3.95%     2 P:x            11.652  0.00     1 F
+                                   -2.08%     4 S              42.998  0.00     1 F
+                                   -1.95%     2 P:z            11.652  0.00     1 F
+                                    1.46%     3 S               0.631  0.00     1 F
+                                    1.06%     2 S             -29.706  2.00     1 F
+ *** Using NEW gradient routines ***
+
+ Energy gradients wrt nuclear displacements
+ ==========================================
+
+     Atom      Cartesian (a.u./angstrom)
+                 X         Y         Z
+ ----------------------------------------
+     1 F    -0.014687 -0.002153 -0.010269
+     2 H     0.014687  0.002153  0.010269
+ ----------------------------------------
+
+
+
+ =======================================================================
+ Electrostatic potential at the Nuclei due to electrons and other nuclei
+ =======================================================================
+  
+         Atom                  Potential
+         ----                  ---------
+     1)   F                  26.87316558
+     2)   H                   1.20773306
+
+=============================================================
+=== CALCULATE ANALYTICAL SECOND DERIVATIVES OF THE ENERGY ===
+=============================================================
+
+                  ------------------------------------------------
+                  
+                  This Analytical Second Derivatives Progam    
+                            was written for ADF by             
+                  
+                                Stephen K. Wolff               
+                  
+                         Scientific Computing & Modelling      
+                  
+                                Vrije University
+                              Theoretical Chemistry
+                                De Boelelaan 1083
+                                1081 HV Amsterdam
+                                 The Netherlands
+                  
+                  ------------------------------------------------
+                  
+                                    References:                
+                                    ===========                
+                  
+                   Attila Berces, Ross M. Dickson, Liangyou Fan
+                   Heiko Jacobsen, David Swerhone, Tom Ziegler,
+                   Computer Physics Communications 100 (1997) 247.
+                  
+                   Heiko Jacobsen, Attila Berces
+                   David Swerhone, Tom Ziegler,
+                   Computer Physics Communications 100 (1997) 263.
+                  
+                   Stephen K. Wolff
+                   Int. J. Quantum Chem. 104 (2005) 645.
+                  
+                  ------------------------------------------------
+                  
+              <><><><><><><><><><><><><><><><><><><><><><><><><>
+ 
+                 SECOND DERIVATIVES INFORMATION:
+                 -------------------------------
+ 
+                 === PRINT
+ 
+                   EIGS,  lprint_eigbas =  F
+                   U1,    lprint_u1     =  F
+                   PARTS, lprint_parts  =  F
+ 
+                 === DEBUG
+ 
+                   ALL        =  F
+                   B1         =  F
+                   DENSITIES  =  F
+                   FIT        =  F
+                   HESSIAN    =  F
+                   NUMBERS    =  F
+                   SYMMETRY   =  F
+                   U1         =  F
+ 
+                 === CPKS
+ 
+                   MAX_CPKS_ITERATIONS    =    20
+                   U1_ACCURACY PARAMETER  =     5.00
+                   U1 ACCURACY            =     0.0000100
+ 
+
+                 Estimated peak private memory usage    164 MB per process
+                                 shared memory usage     22 MB per node
+
+              <><><><><><><><><><><><><><><><><><><><><><><><><>
+
+######## LOOPING OVER NUCLEI ########
+
+==========================
+###### NUCLEUS:     1  F  
+==========================
+
+====================  solving CPKS equations  ====================
+
+NUCLEUS  COORD.    ITERATION   ACCURACY
+-------  ------    ---------   --------
+    1       1          1       0.10534417D+00
+    1       1          2       0.15936693D-01
+    1       1          3       0.10249708D-02
+    1       1          4       0.11741548D-03
+    1       1          5       0.12475959D-04
+    1       1          6       0.40161143D-05
+*** CPKS converged.
+----------------------------------------------
+    1       2          1       0.14213636D-01
+    1       2          2       0.20460608D-02
+    1       2          3       0.38210132D-03
+    1       2          4       0.70712884D-04
+    1       2          5       0.61049671D-05
+*** CPKS converged.
+----------------------------------------------
+    1       3          1       0.72476442D-01
+    1       3          2       0.83459644D-02
+    1       3          3       0.70649786D-03
+    1       3          4       0.12241782D-03
+    1       3          5       0.86641690D-05
+*** CPKS converged.
+----------------------------------------------
+
+====================  end of solving CPKS equations  ====================
+
+==========================
+###### NUCLEUS:     2  H  
+==========================
+
+====================  solving CPKS equations  ====================
+
+NUCLEUS  COORD.    ITERATION   ACCURACY
+-------  ------    ---------   --------
+    2       1          1       0.10597621D+00
+    2       1          2       0.15950101D-01
+    2       1          3       0.10172467D-02
+    2       1          4       0.11800863D-03
+    2       1          5       0.11930317D-04
+    2       1          6       0.40506132D-05
+*** CPKS converged.
+----------------------------------------------
+    2       2          1       0.14243076D-01
+    2       2          2       0.19465595D-02
+    2       2          3       0.40266721D-03
+    2       2          4       0.72226502D-04
+    2       2          5       0.60837749D-05
+*** CPKS converged.
+----------------------------------------------
+    2       3          1       0.72650065D-01
+    2       3          2       0.83359000D-02
+    2       3          3       0.71813455D-03
+    2       3          4       0.12265211D-03
+    2       3          5       0.89289573D-05
+*** CPKS converged.
+----------------------------------------------
+
+====================  end of solving CPKS equations  ====================
+
+ ***************************************************************************************************
+
+
+
+                                     ******************************************
+                                     *  F R E Q U E N C Y    A N A L Y S I S  *
+                                     ******************************************
+  
+
+
+ Atomic Masses:
+ ---------------
+    1. F              18.99840300
+    2. H               1.00782500
+
+
+
+ ======================================
+ Normal Modes in Symmetry Displacements  ***  (cartesians, not mass-weighted)  ***
+ ======================================
+  
+
+
+                                       === A ===
+
+ Symmetry Displacements
+
+
+                          1
+              ------------------------      ------------------------      ------------------------
+    1.F          0.042   0.006   0.029
+    2.H         -0.788  -0.116  -0.554
+
+
+ Frequencies and Normal Modes
+ ============================
+
+             1
+
+         2333.9024
+        ----------
+   1    1.00000000
+
+
+ Intensities
+ ===========
+
+               Frequency       Dipole Strength        Absorption Intensity (degeneracy not counted)
+                 cm-1           1e-40 esu2 cm2          km/mole
+              ----------          ----------          ----------
+             2333.902423         1548.040945          905.614168
+
+
+
+ Zero-Point Energy :      0.005317 a.u.
+ ===================      0.144684 eV
+                                                   hartree              eV         kcal/mol           kJ/mol
+                                      --------------------     -----------       ----------      -----------
+              Bond Energy:              -0.224866355090337         -6.1189          -141.11          -590.39
+              Zero-Point Energy:         0.005317021090560          0.1447             3.34            13.96
+              Enthalpy (T=0K):          -0.219549333999776         -5.9742          -137.77          -576.43
+
+
+
+ ===========================
+ Vibrations and Normal Modes  ***  (cartesian coordinates, NOT mass-weighted)  ***
+ ===========================
+  
+ The headers on the normal mode eigenvectors below give the Frequency in cm-1
+ (a negative value means an imaginary frequency, no output for (almost-)zero frequencies)
+
+
+                      2333.902
+              ------------------------      ------------------------      ------------------------
+    1.F          0.043   0.006   0.030
+    2.H         -0.811  -0.119  -0.570
+
+
+
+
+ List of All Frequencies:
+
+
+ Intensities
+ ===========
+
+               Frequency       Dipole Strength        Absorption Intensity (degeneracy not counted)
+                 cm-1           1e-40 esu2 cm2          km/mole
+              ----------          ----------          ----------
+             2333.902423         1548.040945          905.614168
+
+
+
+ ============================
+ Statistical Thermal Analysis  ***  ideal gas assumed  ***
+ ============================
+  
+ Pressure:                  1.000000 atm.
+ Temperature:             298.150000 K
+
+
+
+ Moments of Inertia (and direction vectors)
+ ==========================================
+
+           0.0000          3.4790          3.4790
+ ------------------------------------------------
+          -0.8123         -0.5808         -0.0536
+          -0.1191          0.2551         -0.9595
+          -0.5710          0.7730          0.2764
+
+
+ The rotational contribution to the molecular entropy includes
+ a term, dependent on the symmetry number sigma. The results 
+ reported below were computed using sigma = 1, determined from
+ the point group symmetry of the input geometry (C(LIN)). 
+ If this is not the correct symmetry, please contact SCM to report a bug.
+ Contributions from frequencies below 20 1/cm are not included in
+ the vibrational sums. Their contributions, if any, are reported separately.
+
+
+     Temp                                                       Transl     Rotat    Vibrat     Total
+     ----                                                       ------     -----    ------     -----
+
+     298.15   Entropy (cal/mole-K):                             34.922     6.921     0.000    41.843
+              Internal Energy (Kcal/mole):                       0.889     0.592     3.337     4.818
+              Constant Volume Heat Capacity (cal/mole-K):        2.981     1.987     0.003     4.971
+
+              Summary of energy terms
+                                                   hartree              eV         kcal/mol           kJ/mol
+                                      --------------------     -----------       ----------      -----------
+              Bond Energy:              -0.224866355090337         -6.1189          -141.11          -590.39
+              Internal Energy:           0.007677622552270          0.2089             4.82            20.16
+              pV/n = RT:                 0.000944186013486          0.0257             0.59             2.48
+              Enthalpy H:               -0.216244546524581         -5.8843          -135.70          -567.75
+              -T*S:                     -0.019880992216526         -0.5410           -12.48           -52.20
+              Gibbs free energy:        -0.236125538741107         -6.4253          -148.17          -619.95
+ 
+
+ ***************************************************************************************************
+ 
+
+
+====================================================================
+*** DONE CALCULATING ANALYTICAL SECOND DERIVATIVES OF THE ENERGY ***
+====================================================================
+
+ 
+ 
+ ========================
+ No memory problems found
+ ========================
+ 
+ Maximum number of active allocate calls:         866
+ 
+ *******************************************************************************
+
+                             A D F   E X I T
+ NORMAL TERMINATION with warnings
+
+
+
+ =================
+ Timing Statistics
+ =================
+  
+ Total Used :                     CPU=        2.76      System=        0.18     Elapsed=        2.97
+
+ Calls  Section                     ( Mean, Percentage )
+ ---------------------------------------------------------------------------------------------------
+     3  ><      ................      0.00    0.04             0.00    0.00             0.00    0.03
+     1  INIT    ................      0.48   17.31             0.02    8.79             0.49   16.68
+     1  GEOMET  ................      0.02    0.91             0.01    3.30             0.03    1.03
+     1  FRAGM   ................      0.01    0.36             0.01    3.30             0.02    0.53
+     1  INPUTA  ................      0.00    0.00             0.00    0.00             0.00    0.01
+     1  ATDEN   ................      0.00    0.11             0.00    1.65             0.01    0.22
+     1  MAINSY  ................      0.01    0.25             0.00    1.10             0.01    0.29
+     1  SYMFIT  ................      0.00    0.04             0.00    0.00             0.00    0.03
+     1  CORORT  ................      0.00    0.00             0.00    0.00             0.00    0.01
+     1  SYMORB  ................      0.00    0.07             0.00    0.00             0.00    0.07
+     1  CLSMAT  ................      0.01    0.29             0.00    0.00             0.01    0.26
+     1  ORTHON  ................      0.00    0.07             0.00    1.65             0.00    0.14
+     1  GENPT   ................      0.05    1.70             0.00    0.55             0.05    1.65
+     1  PTBAS   ................      0.01    0.25             0.00    1.10             0.01    0.30
+    13  FOCKY   ................      0.03   15.06             0.00    7.14             0.03   14.39
+    13  FOCKTR  ................      0.00    0.43             0.00    1.65             0.00    0.57
+    13  SDIIS   ................      0.00    0.87             0.00    1.10             0.00    0.94
+     1  COREPS  ................      0.03    0.98             0.00    1.10             0.03    1.00
+     1  TOTEN   ................      0.07    2.57             0.01    4.40             0.08    2.68
+     1  POPAN   ................      0.00    0.07             0.00    0.55             0.00    0.11
+     1  DEBYE   ................      0.00    0.11             0.00    0.00             0.00    0.09
+     1  INPUTE  ................      0.00    0.00             0.00    0.00             0.00    0.01
+     1  SYMORE  ................      0.00    0.04             0.00    0.00             0.00    0.03
+     1  METS    ................      0.00    0.04             0.00    0.00             0.00    0.02
+     1  CETS    ................      0.00    0.11             0.00    0.00             0.00    0.10
+     2  ELNRGY  ................      0.01    1.05             0.00    1.10             0.02    1.04
+     1  POPUL   ................      0.00    0.18             0.00    1.10             0.01    0.26
+     1  ENGRAD  ................      0.00    0.04             0.00    0.00             0.00    0.04
+     1  ENHESS  ................      1.56   56.48             0.11   58.79             1.69   56.82
+     1  EXIT PROCEDURE .........      0.02    0.58             0.00    1.65             0.02    0.65
+
+
+ Currently Open Files (EXIT00)
+ ====================
+
+ Unit    Access Format  Status   Type       Ident (file)
+ -------------------------------------------------------
+   3      SEQ    FORM   TRANSP  NORMAL      LOGFILE
+                                          ( logfile )
+
+
+ Buffered I/O statistics
+ =======================
+ Memory available:                     67108864
+ Number of records fitting in memory:     16131
+ Input :   0.9% of                        83901  *4k bytes
+ Output:   8.9% of                         3733  *4k bytes
+ Records from serial files evicted:           0
+                    others evicted:           0
+ Hash table lookups:     224704 with          0 conflicts (  0.00%)
+
+ ***************************************************************************************************
+ (LOGFILE)
+ <Apr18-2019> <21:31:26>  ADF development version  RunTime: Apr18-2019 21:31:26  Nodes: 1  Procs: 1
+ <Apr18-2019> <21:31:26>  Hydrogen (TZ2P)
+ <Apr18-2019> <21:31:26>  RunType   : CREATE
+ <Apr18-2019> <21:31:26>  Net Charge: 0 (Nuclei minus Electrons)
+ <Apr18-2019> <21:31:26>  Symmetry  : ATOM
+  Coordinates
+    Atom         X           Y           Z   (Angstrom)
+    1.H         0.000000    0.000000    0.000000
+ <Apr18-2019> <21:31:26>  >>>> CORORT
+ <Apr18-2019> <21:31:26>  >>>> CLSMAT
+ <Apr18-2019> <21:31:26>  >>>> ORTHON
+ <Apr18-2019> <21:31:26>  >>>> GENPT
+ <Apr18-2019> <21:31:26>  Block Length=  64
+ <Apr18-2019> <21:31:26>  >>>> PTBAS
+ <Apr18-2019> <21:31:26>  >>>> CYCLE
+ <Apr18-2019> <21:31:26>              |Error|         MaxErr       Wt(A-DIIS)
+ <Apr18-2019> <21:31:26>      1      0.00000000      0.00000000
+ <Apr18-2019> <21:31:26>      2      0.03100286      0.02644424
+ <Apr18-2019> <21:31:26>      3      0.00958001      0.00932852    100.0
+ <Apr18-2019> <21:31:26>      4      0.00232093      0.00228640      1.3
+ <Apr18-2019> <21:31:26>      5      0.00003155      0.00002984      0.0
+ <Apr18-2019> <21:31:26>      6      0.00000096      0.00000091      0.0
+ <Apr18-2019> <21:31:26>      7      0.00000000      0.00000000      0.0
+ <Apr18-2019> <21:31:26>  SCF converged
+ <Apr18-2019> <21:31:26>      8      0.00000000      0.00000000      0.0
+ <Apr18-2019> <21:31:26>  >>>> POPAN
+ <Apr18-2019> <21:31:26>  >>>> DEBYE
+ <Apr18-2019> <21:31:26>  NORMAL TERMINATION
+ <Apr18-2019> <21:31:26>  END
+ <Apr18-2019> <21:31:26>  ADF development version  RunTime: Apr18-2019 21:31:26  Nodes: 1  Procs: 1
+ <Apr18-2019> <21:31:26>  Fluorine (TZ2P)
+ <Apr18-2019> <21:31:26>  RunType   : CREATE
+ <Apr18-2019> <21:31:26>  Net Charge: 0 (Nuclei minus Electrons)
+ <Apr18-2019> <21:31:26>  Symmetry  : ATOM
+  Coordinates
+    Atom         X           Y           Z   (Angstrom)
+    1.F         0.000000    0.000000    0.000000
+ <Apr18-2019> <21:31:26>  >>>> CORORT
+ <Apr18-2019> <21:31:26>  >>>> CLSMAT
+ <Apr18-2019> <21:31:26>  >>>> ORTHON
+ <Apr18-2019> <21:31:26>  >>>> GENPT
+ <Apr18-2019> <21:31:26>  Block Length=  76
+ <Apr18-2019> <21:31:26>  >>>> PTBAS
+ <Apr18-2019> <21:31:26>  >>>> CYCLE
+ <Apr18-2019> <21:31:26>              |Error|         MaxErr       Wt(A-DIIS)
+ <Apr18-2019> <21:31:26>      1      0.00000000      0.00000000
+ <Apr18-2019> <21:31:26>      2     11.37379478      4.77775941    100.0
+ <Apr18-2019> <21:31:26>      3      5.10737118      3.12542566    100.0
+ <Apr18-2019> <21:31:26>      4      0.96588425      0.45165556    100.0
+ <Apr18-2019> <21:31:26>      5      1.67496341      0.82531802    100.0
+ <Apr18-2019> <21:31:26>      6      0.19960756      0.09763484     97.6
+ <Apr18-2019> <21:31:26>      7      0.26650754      0.12651474    100.0
+ <Apr18-2019> <21:31:26>      8      0.03096878      0.01498150     14.1
+ <Apr18-2019> <21:31:26>      9      0.00605981      0.00290433      1.9
+ <Apr18-2019> <21:31:26>     10      0.00016558      0.00007919      0.0
+ <Apr18-2019> <21:31:26>     11      0.00000005      0.00000002      0.0
+ <Apr18-2019> <21:31:26>     12      0.00000000      0.00000000      0.0
+ <Apr18-2019> <21:31:26>  SCF converged
+ <Apr18-2019> <21:31:26>     13      0.00000000      0.00000000      0.0
+ <Apr18-2019> <21:31:26>  >>>> POPAN
+ <Apr18-2019> <21:31:26>  >>>> DEBYE
+ <Apr18-2019> <21:31:26>  NORMAL TERMINATION
+ <Apr18-2019> <21:31:26>  END
+ <Apr18-2019> <21:31:27>  ADF development version  RunTime: Apr18-2019 21:31:27  Nodes: 1  Procs: 12
+ <Apr18-2019> <21:31:27>  *** (NO TITLE) ***
+ <Apr18-2019> <21:31:27>  RunType   : SINGLE POINT
+ <Apr18-2019> <21:31:27>  WARNING: Restricted Open-Shell calculation, Unrestricted setup may be needed
+ <Apr18-2019> <21:31:27>  Net Charge: -1 (Nuclei minus Electrons)
+ <Apr18-2019> <21:31:27>  Symmetry  : NOSYM
+ <Apr18-2019> <21:31:27>  >>>> FRAGM
+  Coordinates
+    Atom         X           Y           Z   (Angstrom)
+    1.F        -3.680414    0.224820   -0.010605
+    2.H        -2.860915    0.344970    0.565513
+ <Apr18-2019> <21:31:27>  >>>> CORORT
+ <Apr18-2019> <21:31:27>  >>>> CLSMAT
+ <Apr18-2019> <21:31:27>  >>>> ORTHON
+ <Apr18-2019> <21:31:27>  >>>> GENPT
+ <Apr18-2019> <21:31:27>  Block Length= 128
+ <Apr18-2019> <21:31:27>  >>>> PTBAS
+ <Apr18-2019> <21:31:27>  >>>> CYCLE
+ <Apr18-2019> <21:31:27>              |Error|         MaxErr       Wt(A-DIIS)
+ <Apr18-2019> <21:31:27>      1      1.32400850      1.13933546
+ <Apr18-2019> <21:31:27>      2      0.64199421      0.25999787    100.0
+ <Apr18-2019> <21:31:27>      3      0.08043536      0.03418421    100.0
+ <Apr18-2019> <21:31:27>      4      0.30574703      0.12539943    100.0
+ <Apr18-2019> <21:31:27>      5      0.75336917      0.30116397    100.0
+ <Apr18-2019> <21:31:27>      6      0.17748447      0.07018221    100.0
+ <Apr18-2019> <21:31:27>      7      0.14052607      0.04903188    100.0
+ <Apr18-2019> <21:31:28>      8      0.03166088      0.00977520      8.9
+ <Apr18-2019> <21:31:28>      9      0.00400599      0.00126263      0.3
+ <Apr18-2019> <21:31:28>     10      0.00003728      0.00001726      0.0
+ <Apr18-2019> <21:31:28>     11      0.00000936      0.00000415      0.0
+ <Apr18-2019> <21:31:28>     12      0.00000010      0.00000003      0.0
+ <Apr18-2019> <21:31:28>  SCF converged
+ <Apr18-2019> <21:31:28>     13      0.00000001      0.00000000      0.0
+ <Apr18-2019> <21:31:28>  WARNING: partially occupied orbitals
+ <Apr18-2019> <21:31:28>   Solutions with partially occupied orbitals may not be
+ <Apr18-2019> <21:31:28>   lowest in energy. You might consider lowering the
+ <Apr18-2019> <21:31:28>   symmetry in the input and explicitly specifying integer
+ <Apr18-2019> <21:31:28>   occupations. In that case always check that you obtain
+ <Apr18-2019> <21:31:28>   an aufbau solution.
+ <Apr18-2019> <21:31:28>  >>>> TOTEN
+ <Apr18-2019> <21:31:28>  >>>> POPAN
+ <Apr18-2019> <21:31:28>  >>>> DEBYE
+ <Apr18-2019> <21:31:28>  >>>> AMETS
+ <Apr18-2019> <21:31:28>   Bond Energy          -0.22486636 a.u.
+ <Apr18-2019> <21:31:28>   Bond Energy          -6.11892486 eV
+ <Apr18-2019> <21:31:28>   Bond Energy        -141.11       kcal/mol
+ <Apr18-2019> <21:31:28>  >>>> POPUL
+ <Apr18-2019> <21:31:28>  >>>> ENGRAD
+ <Apr18-2019> <21:31:28>  >>>> ENHESS
+ <Apr18-2019> <21:31:28>  === NUCLEUS:     1
+ <Apr18-2019> <21:31:29>  === NUCLEUS:     2
+ <Apr18-2019> <21:31:29>  >>>> CALC_HESS_PMAT
+ <Apr18-2019> <21:31:29>  >>>> CALC_HESS_WMAT
+ <Apr18-2019> <21:31:30>  NORMAL TERMINATION with warnings
+ <Apr18-2019> <21:31:30>  END
