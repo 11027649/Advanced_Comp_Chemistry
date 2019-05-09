@@ -23,15 +23,12 @@ BASIS
   CORE none
 END
 
-ANALYTICALFREQ
-END
-
 SCF
   iterations 250
 END
 
 SYMMETRY nosym
-CHARGE -1
+CHARGE 0
 
 ZLMFIT
   Quality normal

@@ -1,0 +1,59 @@
+#!/bin/bashexport 
+SCM_TMPDIR=/local/datastore0/$USER/$SLURM_JOBID
+srun mkdir -p $SCM_TMPDIR
+chmod 700 $SCM_TMPDIR
+cd $SCM_TMPDIR
+export TC_SUBMISSION_DIR=$SLURM_SUBMIT_DIR
+echo $SLURM_JOB_NODELIST >> 
+$SLURM_SUBMIT_DIR/$SLURM_JOB_NAME.$SLURM_JOBID.out
+
+$ADFBIN/adf <<eor>$SLURM_SUBMIT_DIR/$SLURM_JOB_NAME.out
+
+XC
+    GGA BP86
+END
+
+BASIS
+    TYPE TZ2P
+    CORE none
+END
+
+FRAGMENTS
+BH3 $SLURM_SUBMIT_DIR/sp_frag1_BH3.t21
+NH3 $SLURM_SUBMIT_DIR/sp_frag2_NH3.t21
+END
+
+SCF
+    iterations 250
+END
+
+EPRINT
+    SFO Eig Ovl   
+END
+
+ZLMFIT
+    Quality normal
+END
+
+BECKEGRID
+    Quality good
+End
+
+SYMMETRY nosym
+CHARGE 0
+
+ATOMS
+    1.N        -2.018116   -1.805832    0.390284 frag=NH3
+    2.H        -1.812274   -2.814567    0.567712 frag=NH3
+    3.H        -2.527096   -1.481522    1.243052 frag=NH3
+    4.H        -2.737305   -1.807458   -0.367473 frag=NH3
+    5.B        -0.699821   -0.921212    0.039035 frag=BH3
+    6.H        -1.066308    0.233402   -0.146240 frag=BH3
+    7.H         0.063525   -0.997313    0.994773 frag=BH3
+    8.H        -0.194418   -1.394523   -0.972052 frag=BH3
+END
+
+ENDINPUT
+eor
+
+cp TAPE21 $SLURM_SUBMIT_DIR/$SLURM_JOB_NAME.

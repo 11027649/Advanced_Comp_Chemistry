@@ -1,0 +1,68 @@
+#!/bin/bashexport 
+SCM_TMPDIR=/local/datastore0/$USER/$SLURM_JOBID
+srun mkdir -p $SCM_TMPDIR
+chmod 700 $SCM_TMPDIR
+cd $SCM_TMPDIR
+export TC_SUBMISSION_DIR=$SLURM_SUBMIT_DIR
+echo $SLURM_JOB_NODELIST >> 
+$SLURM_SUBMIT_DIR/$SLURM_JOB_NAME.$SLURM_JOBID.out
+
+$ADFBIN/adf <<eor>$SLURM_SUBMIT_DIR/$SLURM_JOB_NAME.out
+
+XC
+    GGA BP86
+END
+
+BASIS
+    TYPE TZ2P
+    CORE none
+END
+
+FRAGMENTS
+NME3 $SLURM_SUBMIT_DIR/sp_frag2_NME3.t21
+BH3 $SLURM_SUBMIT_DIR/sp_frag1_BH3.t21
+END
+
+SCF
+    iterations 250
+END
+
+EPRINT
+    SFO Eig Ovl   
+END
+
+ZLMFIT
+    Quality normal
+END
+
+BECKEGRID
+    Quality good
+End
+
+SYMMETRY nosym
+CHARGE 0
+
+ATOMS
+    1.C         1.156324   -0.871820   -0.975393 frag=NME3
+    2.N         0.369650   -0.257841    0.135666 frag=NME3
+    3.B         1.316930   -0.082079    1.460421 frag=BH3
+    4.H         0.613613    0.421850    2.324572 frag=BH3
+    5.H         1.696699   -1.203657    1.765748 frag=BH3
+    6.H         2.241626    0.647040    1.130372 frag=BH3
+    7.C        -0.138996    1.074230   -0.308947 frag=NME3
+    8.C        -0.793487   -1.139857    0.451621 frag=NME3
+    9.H         2.012123   -0.215582   -1.203437 frag=NME3
+   10.H         0.522746   -0.989753   -1.873577 frag=NME3
+   11.H         1.522687   -1.856954   -0.643228 frag=NME3
+   12.H         0.723811    1.718498   -0.544617 frag=NME3
+   13.H        -0.720968    1.520109    0.514079 frag=NME3
+   14.H        -0.778810    0.960636   -1.203301 frag=NME3
+   15.H        -1.372133   -0.678360    1.268367 frag=NME3
+   16.H        -1.434792   -1.262204   -0.440532 frag=NME3
+   17.H        -0.411541   -2.121565    0.776248 frag=NME3
+END
+
+ENDINPUT
+eor
+
+cp TAPE21 $SLURM_SUBMIT_DIR/$SLURM_JOB_NAME.

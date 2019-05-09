@@ -1,0 +1,8 @@
+scf.iterations=250
+xc.GGA=blyp
+basis.TYPE=TZ2P
+basis.CORE=large
+BECKEGRID.Quality=good
+relativistic=SCALAR ZORA
+charge=0 0
+symmetry=nosym

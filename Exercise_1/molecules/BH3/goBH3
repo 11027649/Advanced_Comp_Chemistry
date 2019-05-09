@@ -1,0 +1,59 @@
+#!/bin/bash
+#SBATCH --nodes 1
+#SBATCH --ntasks 12
+#SBATCH --partition studentq
+#SBATCH --time 24:00:00
+
+export SCM_TMPDIR=/local/datastore0/$USER/$SLURM_JOBID
+srun mkdir -p $SCM_TMPDIR
+chmod 700 $SCM_TMPDIR
+cd $SCM_TMPDIR
+export TC_SUBMISSION_DIR=$SLURM_SUBMIT_DIR
+echo $SLURM_JOB_NODELIST >> $SLURM_SUBMIT_DIR/$SLURM_JOB_NAME.$SLURM_JOBID.out
+
+$ADFBIN/adf <<eor>$SLURM_SUBMIT_DIR/$SLURM_JOB_NAME.out
+
+XC
+  GGA BP86
+END
+
+BASIS
+  TYPE TZ2P
+  CORE none
+END
+
+ANALYTICALFREQ
+END
+
+SCF
+  iterations 250
+END
+
+Geometry
+  Iterations 300
+  Optim Cartesian
+  Convergence E=1e-4 grad=1e-4
+End
+
+SYMMETRY nosym
+CHARGE 0
+
+ZLMFIT
+  Quality normal
+END
+
+BECKEGRID
+  Quality good
+End
+
+ATOMS
+B      -0.55795709      -0.82606712       0.00112417
+H      -1.19622081       0.16116189      -0.11445905
+H      -0.05430517      -1.08268979       1.03835136
+H      -0.31484693      -1.48386251      -0.94943528
+END
+
+ENDINPUT
+eor
+
+cp TAPE21 $SLURM_SUBMIT_DIR/$SLURM_JOB_NAME.t21

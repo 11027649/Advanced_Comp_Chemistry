@@ -1,0 +1,175 @@
+[18:01:06] PLAMS working folder: /home/tcst25/advanced_comp_chemistry/exercise4/PdCH4/asm/plams.16943
+[18:01:06] Job frag1.00001 started
+[18:01:11] Job frag1.00001 finished with status 'successful' 
+[18:01:11] Job frag2.00001 started
+[18:01:15] Job frag2.00001 finished with status 'successful' 
+[18:01:15] Job Pd1H4C1.00001 started
+[18:01:25] Job Pd1H4C1.00001 finished with status 'successful' 
+  #IRC  
+  EnergyTotal          
+  Elstat               
+  Int                 
+  OI                   
+  Pauli               
+  StrainTotal        
+  bondlength          
+  frag1Strain        
+  frag2Strain             
+
+  1     
+  -470.47954090730053  
+  -326.60205347498953  
+  -526.9083219160192  
+  -1613.8708204247007  
+  1413.5716623111193  
+  56.42878100871865  
+  -110.3430615026064  
+  56.42878617873947  
+  -5.170020821557102e-06  
+
+[18:01:25] Job frag1.00002 started
+[18:01:30] Job frag1.00002 finished with status 'successful' 
+[18:01:30] Job frag2.00002 started
+[18:01:34] Job frag2.00002 finished with status 'successful' 
+[18:01:34] Job Pd1H4C1.00002 started
+[18:01:43] Job Pd1H4C1.00002 finished with status 'successful' 
+  #IRC  
+  EnergyTotal          
+  Elstat               
+  Int                 
+  OI                   
+  Pauli              
+  StrainTotal        
+  bondlength           
+  frag1Strain        
+  frag2Strain             
+
+  2     
+  -442.19969015455104  
+  -317.58135860483765  
+  -529.6704243445669  
+  -1582.1411661149807  
+  1370.058331669168  
+  87.47073419001585  
+  -109.97579556711855  
+  87.47073936003471  
+  -5.170018871655222e-06  
+
+[18:01:43] Job frag1.00003 started
+[18:01:48] Job frag1.00003 finished with status 'successful' 
+[18:01:48] Job frag2.00003 started
+[18:01:52] Job frag2.00003 finished with status 'successful' 
+[18:01:52] Job Pd1H4C1.00003 started
+[18:02:00] Job Pd1H4C1.00003 finished with status 'successful' 
+  #IRC  
+  EnergyTotal          
+  Elstat              
+  Int                 
+  OI                  
+  Pauli               
+  StrainTotal         
+  bondlength           
+  frag1Strain         
+  frag2Strain              
+
+  3     
+  -429.13377645317155  
+  -320.4232096975209  
+  -532.6258110675626  
+  -1576.625083631509  
+  1364.4289971654541  
+  103.49203461439106  
+  -109.71627534941875  
+  103.49203978441011  
+  -5.1700190507445215e-06  
+
+[18:02:00] Job frag1.00004 started
+[18:02:06] Job frag1.00004 finished with status 'successful' 
+[18:02:06] Job frag2.00004 started
+[18:02:10] Job frag2.00004 finished with status 'successful' 
+[18:02:10] Job Pd1H4C1.00004 started
+[18:02:19] Job Pd1H4C1.00004 finished with status 'successful' 
+  #IRC  
+  EnergyTotal          
+  Elstat               
+  Int                 
+  OI                   
+  Pauli               
+  StrainTotal         
+  bondlength           
+  frag1Strain         
+  frag2Strain             
+
+  4     
+  -422.14757936534573  
+  -326.31365713140826  
+  -533.6936471915086  
+  -1574.0562887149676  
+  1366.6826275411522  
+  111.54606782616285  
+  -109.54051863303151  
+  111.54607299620648  
+  -5.170043616838311e-06  
+
+[18:02:19] Job frag1.00005 started
+[18:02:24] Job frag1.00005 finished with status 'successful' 
+[18:02:24] Job frag2.00005 started
+[18:02:27] Job frag2.00005 finished with status 'successful' 
+[18:02:27] Job Pd1H4C1.00005 started
+[18:02:36] Job Pd1H4C1.00005 finished with status 'successful' 
+  #IRC  
+  EnergyTotal         
+  Elstat               
+  Int                 
+  OI                   
+  Pauli               
+  StrainTotal         
+  bondlength           
+  frag1Strain         
+  frag2Strain              
+
+  5     
+  -420.8456114446459  
+  -329.20362059881603  
+  -533.7664371634169  
+  -1574.0288951003272  
+  1369.4726427964945  
+  112.92082571877096  
+  -109.50008500748996  
+  112.92083088882339  
+  -5.1700524313978384e-06  
+
+[18:02:36] Job frag1.00006 started
+[18:02:42] Job frag1.00006 finished with status 'successful' 
+[18:02:42] Job frag2.00006 started
+[18:02:46] Job frag2.00006 finished with status 'successful' 
+[18:02:46] Job Pd1H4C1.00006 started
+[18:02:54] Job Pd1H4C1.00006 finished with status 'successful' 
+  #IRC  
+  EnergyTotal         
+  Elstat               
+  Int                 
+  OI                   
+  Pauli              
+  StrainTotal        
+  bondlength           
+  frag1Strain         
+  frag2Strain              
+
+  6     
+  -421.1078975640621  
+  -328.71733952439985  
+  -533.7729685358522  
+  -1574.0166997751733  
+  1368.967763953204  
+  112.6650709717901  
+  -109.50974420077705  
+  112.66507614177704  
+  -5.1699869340584985e-06  
+
+headerlist====== ['#IRC', 'Elstat', 'EnergyTotal', 'Int', 'OI', 'Pauli', 'StrainTotal', 'bondlength', 'frag1Strain', 'frag2Strain']
+tablevalue====== [{'bondlength': -110.3430615026064, 'frag1Strain': 56.42878617873947, 'OI': -1613.8708204247007, 'StrainTotal': 56.42878100871865, 'Pauli': 1413.5716623111193, 'Elstat': -326.60205347498953, 'Int': -526.9083219160192, '#IRC': '1', 'frag2Strain': -5.170020821557102e-06, 'EnergyTotal': -470.47954090730053}, {'bondlength': -109.97579556711855, 'frag1Strain': 87.47073936003471, 'OI': -1582.1411661149807, 'StrainTotal': 87.47073419001585, 'Pauli': 1370.058331669168, 'Elstat': -317.58135860483765, 'Int': -529.6704243445669, '#IRC': '2', 'frag2Strain': -5.170018871655222e-06, 'EnergyTotal': -442.19969015455104}, {'bondlength': -109.71627534941875, 'frag1Strain': 103.49203978441011, 'OI': -1576.625083631509, 'StrainTotal': 103.49203461439106, 'Pauli': 1364.4289971654541, 'Elstat': -320.4232096975209, 'Int': -532.6258110675626, '#IRC': '3', 'frag2Strain': -5.1700190507445215e-06, 'EnergyTotal': -429.13377645317155}, {'bondlength': -109.54051863303151, 'frag1Strain': 111.54607299620648, 'OI': -1574.0562887149676, 'StrainTotal': 111.54606782616285, 'Pauli': 1366.6826275411522, 'Elstat': -326.31365713140826, 'Int': -533.6936471915086, '#IRC': '4', 'frag2Strain': -5.170043616838311e-06, 'EnergyTotal': -422.14757936534573}, {'bondlength': -109.50008500748996, 'frag1Strain': 112.92083088882339, 'OI': -1574.0288951003272, 'StrainTotal': 112.92082571877096, 'Pauli': 1369.4726427964945, 'Elstat': -329.20362059881603, 'Int': -533.7664371634169, '#IRC': '5', 'frag2Strain': -5.1700524313978384e-06, 'EnergyTotal': -420.8456114446459}, {'bondlength': -109.50974420077705, 'frag1Strain': 112.66507614177704, 'OI': -1574.0166997751733, 'StrainTotal': 112.6650709717901, 'Pauli': 1368.967763953204, 'Elstat': -328.71733952439985, 'Int': -533.7729685358522, '#IRC': '6', 'frag2Strain': -5.1699869340584985e-06, 'EnergyTotal': -421.1078975640621}]
+Traceback (most recent call last):
+  File "/home/tcst25/pyfrag/standalone/adf_new/PyFrag.py", line 184, in <module>
+    WriteFailFiles(failStructures, fileName)
+NameError: name 'WriteFailFiles' is not defined
