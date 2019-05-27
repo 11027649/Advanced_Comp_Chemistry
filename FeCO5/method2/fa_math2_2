@@ -1,0 +1,73 @@
+#!/bin/bash
+#SBATCH --nodes 1
+#SBATCH --ntasks 12
+#SBATCH --partition studentq
+#SBATCH --time 24:00:00
+
+export SCM_TMPDIR=/local/datastore0/$USER/$SLURM_JOBID
+srun mkdir -p $SCM_TMPDIR
+chmod 700 $SCM_TMPDIR
+cd $SCM_TMPDIR
+export TC_SUBMISSION_DIR=$SLURM_SUBMIT_DIR
+
+$ADFBIN/adf <<eor>$SLURM_SUBMIT_DIR/$SLURM_JOB_NAME.out
+
+XC
+    GGA BLYP
+END
+
+BASIS
+    TYPE TZ2P
+    CORE none
+END
+
+FRAGMENTS
+M $SLURM_SUBMIT_DIR/sp_meth2_frag1_Fe_Occ.t21
+L $SLURM_SUBMIT_DIR/sp_meth2_frag2_CO5.t21
+END
+
+SCF
+    iterations 250
+END
+
+EPRINT
+    SFO Eig Ovl   
+END
+
+ZLMFIT
+    Quality normal
+END
+
+BECKEGRID
+    Quality good
+End
+
+SYMMETRY D(3H)
+CHARGE 0
+
+FRAGOCCUPATIONS
+M
+  S 3//3
+  P 6//6
+  D 5//3
+  SUBEND
+END
+
+ATOMS
+    1.Fe        0.000000    0.000000    0.000000 f=M
+    2.C         0.917397    1.588977    0.000000 f=L
+    3.O         1.495217    2.589792    0.000000 f=L 
+    4.C         0.917397   -1.588977    0.000000 f=L
+    5.O         1.495217   -2.589792    0.000000 f=L
+    6.C         0.000000    0.000000    1.835389 f=L
+    7.O         0.000000    0.000000    2.987899 f=L
+    8.C         0.000000    0.000000   -1.835389 f=L
+    9.O         0.000000    0.000000   -2.987899 f=L 
+   10.C        -1.834793    0.000000    0.000000 f=L
+   11.O        -2.990435    0.000000    0.000000 f=L
+END
+
+ENDINPUT
+eor
+
+cp TAPE21 $SLURM_SUBMIT_DIR/$SLURM_JOB_NAME.t21

@@ -1,0 +1,4 @@
+Molecules, MC, CO, COeq, COax
+NiCO4, 185.7, 115.0, NA, NA
+FeCO5, 183.5, NA, 115.6, 115.3
+CrCO6, 193.9, 115.4, NA, NA
